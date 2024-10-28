@@ -1,0 +1,19 @@
+{
+  "name": "bruno-the-frog",
+  "version": "1.0.0",
+  "description": "== Bruno The Frog ==",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "npx sass --watch scss/style.scss:style.css",
+    "generate-vars": "node generate-scss-vars.js",
+    "watch-vars": "chokidar 'theme.json' -c 'npm run generate-vars'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "sass": "^1.79.5"
+  }
+}
