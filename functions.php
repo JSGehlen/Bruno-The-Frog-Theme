@@ -60,3 +60,12 @@ add_filter(
         return $theme_json;
     }
 );
+
+/**
+ * Remove core block patterns.
+ */
+function remove_core_block_patterns()
+{
+  remove_theme_support('core-block-patterns');
+}
+add_action('init', 'remove_core_block_patterns', 9);

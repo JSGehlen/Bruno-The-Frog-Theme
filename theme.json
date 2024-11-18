@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -63,6 +63,9 @@
 				"em",
 				"%"
 			],
+			"blockGap": null,
+			"margin": false,
+			"padding": false,
 			"spacingSizes": [
 				{
 					"size": "0.25rem",
@@ -242,6 +245,24 @@
 	"styles": {
 		"typography": {
 			"fontFamily": "--wp--preset--font-family--roboto"
+		},
+		"blocks": {
+			"core/group": {
+				"variations": {
+					"Green": {
+						"backgroundColor": "green",
+						"color": "white"
+					},
+					"2": {
+						"padding": {
+							"top": "lg",
+							"right": "lg",
+							"bottom": "lg",
+							"left": "lg"
+						}
+					}
+				}
+			}
 		}
 	},
 	"templateParts": [

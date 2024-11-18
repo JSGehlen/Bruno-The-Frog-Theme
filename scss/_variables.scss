@@ -29,3 +29,48 @@ $spacing-lg: 3rem; // Spacing Size - Large
 $spacing-xl: 3.5rem; // Spacing Size - XL
 $spacing-2xl: 4rem; // Spacing Size - 2XL
 $spacing-3xl: 6rem; // Spacing Size - 3XL
+$breakpoint-mobile: 48rem;
+
+:root {
+  --wp--preset--color--green: #{$green};
+  --wp--preset--color--purple: #{$purple};
+  --wp--preset--color--forest-green: #{$forest-green};
+  --wp--preset--color--off-white: #{$off-white};
+  --wp--preset--color--latte: #{$latte};
+  --wp--preset--color--black: #{$black};
+  --wp--preset--color--white: #{$white};
+  --wp--preset--font-size--small: 14px;
+  --wp--preset--font-size--medium: 20px;
+  --wp--preset--font-size--large: 36px;
+  --wp--preset--font-size--x-large: 42px;
+  --wp--preset--font-size--heading-level-1: #{$heading-level-1};
+  --wp--preset--font-size--heading-level-2: #{$heading-level-2};
+  --wp--preset--font-size--heading-level-3: #{$heading-level-3};
+  --wp--preset--font-size--heading-level-4: #{$heading-level-4};
+  --wp--preset--font-size--heading-level-5: #{$heading-level-5};
+  --wp--preset--font-size--heading-level-6: #{$heading-level-6};
+  --wp--preset--font-size--paragraph: #{$paragraph};
+  --wp--preset--font-size--caption: #{$caption};
+  --wp--preset--font-size--button: #{$button};
+  --wp--preset--font-size--button-large: #{$button-large};
+  --wp--preset--font-size--button-xl: #{$button-xl};
+  --wp--preset--font-size--flavor-heading: #{$flavor-heading};
+  --wp--preset--spacing--3-xs: #{$spacing-3xs};
+  --wp--preset--spacing--2-xs: #{$spacing-2xs};
+  --wp--preset--spacing--xs: #{$spacing-xs};
+  --wp--preset--spacing--sm: #{$spacing-sm};
+  --wp--preset--spacing--md: #{$spacing-md};
+  --wp--preset--spacing--lg: #{$spacing-lg};
+  --wp--preset--spacing--xl: #{$spacing-xl};
+  --wp--preset--spacing--2-xl: #{$spacing-2xl};
+  --wp--preset--spacing--3-xl: #{$spacing-3xl};
+}
+@media (max-width: $breakpoint-mobile) {
+  :root {
+    --wp--preset--font-size--heading-level-1: #{$heading-level-2};
+    --wp--preset--font-size--heading-level-2: #{$heading-level-3};
+    --wp--preset--font-size--heading-level-3: #{$heading-level-4};
+    --wp--preset--font-size--heading-level-4: #{$heading-level-5};
+    --wp--preset--font-size--heading-level-5: #{$heading-level-6};
+  }
+}
