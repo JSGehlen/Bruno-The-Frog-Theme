@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * Title: Two Columns
+ * Slug: bruno-the-frog-theme/two-columns
+ * Categories: text
+ * Block Types: core/group
+ * Description: A two-column layout with an image on the left and text on the right.
+ * Keywords: columns, image, text
+ */
+?>
+
+<!-- wp:group {"metadata":{"name":"Bruno - Two Columns"},"align":"full","backgroundColor":"forest-green","layout":{"type":"constrained"}} -->
+<div
+  class="wp-block-group alignfull has-forest-green-background-color has-background">
+  <!-- wp:group {"metadata":{"name":"Container"},"align":"wide","className":"two-columns","backgroundColor":"forest-green","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div
+    class="wp-block-group alignwide two-columns has-forest-green-background-color has-background">
+    <!-- wp:group {"metadata":{"name":"Left"},"className":"flex-one","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group flex-one">
+      <!-- wp:image {"sizeSlug":"large","className":"is-style-default"} -->
+      <figure class="wp-block-image size-large is-style-default">
+        <img
+          src="https://brunothefrog.fi/wp-content/uploads/2024/11/miksibruno.png"
+          alt="" />
+      </figure>
+      <!-- /wp:image -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"metadata":{"name":"Right - Text"},"className":"two-columns__text flex-one","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","layout":{"type":"constrained"}} -->
+    <div
+      class="wp-block-group two-columns__text flex-one has-white-color has-text-color has-link-color">
+      <!-- wp:heading {"fontSize":"heading-level-3"} -->
+      <h2 class="wp-block-heading has-heading-level-3-font-size">
+        Miksi <span>Bruno the Frog?</span>
+      </h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:group {"metadata":{"name":"Text Box"},"className":"two-columns__text\u002d\u002dtext-box","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group two-columns__text--text-box">
+        <!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"heading-level-5"} -->
+        <h3
+          class="wp-block-heading has-heading-level-5-font-size"
+          style="line-height: 1.2">
+          Vuosien työkokemus sosiaalisesta mediasta
+        </h3>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Olemme seikkailleet someviidakossa yhteensä 20 vuoden ajan. Matkan
+          varrella tutuksi ovat tulleet monien eri yritysten ja organisaatioiden
+          sometoiminta sekä toimivimmat käytännöt ja strategiat.
+        </p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group {"metadata":{"name":"Text Box"},"className":"two-columns__text\u002d\u002dtext-box","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group two-columns__text--text-box">
+        <!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"heading-level-5"} -->
+        <h3
+          class="wp-block-heading has-heading-level-5-font-size"
+          style="line-height: 1.2">
+          Uusimmat tiedot ja algoritmituntemus
+        </h3>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Me emme kaihda uuden oppimista! Opiskelemme jatkuvasti uutta, jotta
+          voimme tarjota sinulle mahdollisimman laadukasta ja ajantasaista
+          palvelua.
+        </p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group {"metadata":{"name":"Text Box"},"className":"two-columns__text\u002d\u002dtext-box","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group two-columns__text--text-box">
+        <!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"heading-level-5"} -->
+        <h3
+          class="wp-block-heading has-heading-level-5-font-size"
+          style="line-height: 1.2">
+          Numerot puhuvat puolestaan
+        </h3>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p>
+          Rakastamme dataa! Seuraamme työmme tuloksia ja toimintamme perustuu
+          aina analytiikkaan. Meiltä saat kattavat ja ymmärrettävät raportit
+          somekanavillasi saavutetuista tuloksista. Varmistamme aina, että sinä
+          ymmärrät. Somekielen ei tarvitse olla rakettitiedettä!
+        </p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
