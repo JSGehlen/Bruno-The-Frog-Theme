@@ -20,7 +20,7 @@
       gap: $spacing-xs;
       align-self: stretch;
       max-width: $content-size !important;
-    margin: 0 auto !important;
+      margin: 0 auto !important;
     }
 
     @include mobile() {
@@ -29,4 +29,130 @@
     }
   }
 
+}
+
+.cta-grid {
+  display: flex;
+  padding: $spacing-3xl 0rem $spacing-2xl 0rem !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-2xl;
+  align-self: stretch;
+
+  @include mobile() {
+    padding: $spacing-lg $spacing-sm !important;
+    gap: $spacing-sm !important;
+  }
+
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-image: url(https://brunothefrog.fi/wp-content/uploads/2024/11/arrowtwirl.png);
+    width: auto;
+    background-repeat: no-repeat;
+    max-width: 75rem;
+    margin: 0 auto;
+    background-position: top right;
+    background-size: contain;
+
+    @include large-desktop {
+      height: 20rem;
+    }
+
+    @include desktop {
+      height: 12rem;
+    }
+
+    @include tablet {
+      height: 10rem;
+    }
+
+    @include mobile() {
+      height: 8rem;
+    }
+  }
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
+    max-width: $content-size !important;
+    margin: 0 auto !important;
+    z-index: 10;
+  }
+
+  &__grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing-md;
+    align-self: stretch;
+  }
+
+  &__grid-row {
+    display: grid;
+    gap: $spacing-md !important;
+    padding-inline: $spacing-md !important;
+    box-sizing: content-box;
+
+    @include large-desktop {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)) !important;
+    }
+
+    @include desktop {
+      grid-template-columns: 1fr 1fr !important;
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr !important;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr !important;
+      padding: 0 !important;
+    }
+  }
+
+  &__grid-cell {
+    display: flex;
+    padding: $spacing-xl;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: $spacing-xs;
+    flex: 1 0 0;
+
+    @include tablet {
+      padding: $spacing-lg;
+    }
+
+    @include mobile {
+      padding: $spacing-sm;
+    }
+
+    &--title {
+      margin: 0 !important;
+    }
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: $spacing-xs;
+      align-self: stretch;
+
+      p {
+        margin: 0 !important;
+      }
+    }
+  }
 }

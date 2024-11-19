@@ -151,6 +151,15 @@ header .wp-block-group nav {
   margin-right: 0 !important;
 }
 
+:where(.wp-site-blocks) > * {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+p {
+  line-height: 150%;
+}
+
 :root {
   --wp--preset--color--green: #98CE00;
   --wp--preset--color--purple: #7E1D56;
@@ -220,6 +229,134 @@ header .wp-block-group nav {
     padding: 3rem 1.5rem !important;
     gap: 1.5rem !important;
   }
+}
+
+.cta-grid {
+  display: flex;
+  padding: 6rem 0rem 4rem 0rem !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  align-self: stretch;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .cta-grid {
+    padding: 3rem 1.5rem !important;
+    gap: 1.5rem !important;
+  }
+}
+.cta-grid::before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  left: 0;
+  background-image: url(https://brunothefrog.fi/wp-content/uploads/2024/11/arrowtwirl.png);
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 75rem;
+  margin: 0 auto;
+  background-position: top right;
+  background-size: contain;
+}
+@media (min-width: 1241px) {
+  .cta-grid::before {
+    height: 20rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .cta-grid::before {
+    height: 12rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cta-grid::before {
+    height: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .cta-grid::before {
+    height: 8rem;
+  }
+}
+.cta-grid__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 50rem !important;
+  margin: 0 auto !important;
+  z-index: 10;
+}
+.cta-grid__grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+.cta-grid__grid-row {
+  display: grid;
+  gap: 2rem !important;
+  padding-inline: 2rem !important;
+  box-sizing: content-box;
+}
+@media (min-width: 1241px) {
+  .cta-grid__grid-row {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)) !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .cta-grid__grid-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cta-grid__grid-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 768px) {
+  .cta-grid__grid-row {
+    grid-template-columns: 1fr !important;
+    padding: 0 !important;
+  }
+}
+.cta-grid__grid-cell {
+  display: flex;
+  padding: 3.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cta-grid__grid-cell {
+    padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .cta-grid__grid-cell {
+    padding: 1.5rem;
+  }
+}
+.cta-grid__grid-cell--title {
+  margin: 0 !important;
+}
+.cta-grid__grid-cell--text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+.cta-grid__grid-cell--text p {
+  margin: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

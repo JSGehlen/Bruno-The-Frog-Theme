@@ -53,6 +53,7 @@ header {
   height: 100%;
   width: 100%;
   display: block;
+
   .wp-block-group {
     display: flex;
     justify-content: space-between;
@@ -71,7 +72,11 @@ header {
   }
 }
 
-:where(.wp-site-blocks) > * {
+:where(.wp-site-blocks)>* {
   margin-block-start: 0 !important;
   margin-block-end: 0 !important;
+}
+
+p {
+  line-height: 150%;
 }
