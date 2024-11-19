@@ -121,7 +121,7 @@ footer .wp-block-group {
   position: relative;
 }
 footer .wp-block-group .footer-frog {
-  margin-top: -6rem;
+  margin-top: -96px;
   pointer-events: none;
   user-select: none;
 }
