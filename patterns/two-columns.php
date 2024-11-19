@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Title: Two Columns
  * Slug: bruno-the-frog-theme/two-columns
