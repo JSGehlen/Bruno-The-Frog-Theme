@@ -1,12 +1,10 @@
 <?php
-
 /**
  * Title: Two Columns
  * Slug: bruno-the-frog-theme/two-columns
- * Categories: text
  * Block Types: core/group
- * Description: A two-column layout with an image on the left and text on the right.
- * Keywords: columns, image, text
+ * Keywords: cta, call to action, grid
+ * Description: A call-to-action grid with a heading and paragraphs.
  */
 ?>
 
