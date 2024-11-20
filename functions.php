@@ -29,6 +29,7 @@ function bruno_the_frog_editor_style()
 add_action('admin_init', 'bruno_the_frog_editor_style');
 add_theme_support('wp-block-styles');
 
+
 /**
  * Remove bloated inline core color styles.
  *
