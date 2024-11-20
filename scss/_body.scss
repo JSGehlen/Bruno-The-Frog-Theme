@@ -20,14 +20,20 @@ body:has(#wpadminbar) .navigation-wrapper {
 main {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: calc(100vh - 264px);
+  min-height: calc(100vh - 16.5rem);
+}
+
+section {
+  padding-block: 0 !important;
+  padding-inline: $spacing-sm !important;
+  box-sizing: content-box !important;
 }
 
 footer {
   background-color: $black;
 
   .wp-block-group {
-    padding: 2rem 1.5rem;
+    padding: 2rem $spacing-sm;
     display: flex;
     justify-content: space-between;
     max-width: $wide-size;

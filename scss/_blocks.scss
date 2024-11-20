@@ -33,7 +33,7 @@
 
 .cta-grid {
   display: flex;
-  padding: $spacing-3xl 0rem $spacing-2xl 0rem !important;
+  padding: $spacing-3xl $spacing-sm $spacing-2xl $spacing-sm !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -163,18 +163,17 @@
   align-items: center;
   gap: $spacing-2xl;
   align-self: stretch;
-  padding-inline: $spacing-md !important;
   box-sizing: content-box !important;
 
   @include tablet {
     flex-direction: column !important;
-    padding: $spacing-xl 0;
+    padding: $spacing-xl 0 !important;
     gap: $spacing-lg;
   }
 
   @include mobile {
     flex-direction: column !important;
-    padding: $spacing-xl 0;
+    padding: $spacing-xl 0 !important;
     gap: $spacing-lg;
   }
 

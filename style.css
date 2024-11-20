@@ -106,7 +106,13 @@ body:has(#wpadminbar) .navigation-wrapper {
 main {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: calc(100vh - 264px);
+  min-height: calc(100vh - 16.5rem);
+}
+
+section {
+  padding-block: 0 !important;
+  padding-inline: 1.5rem !important;
+  box-sizing: content-box !important;
 }
 
 footer {
@@ -233,7 +239,7 @@ p {
 
 .cta-grid {
   display: flex;
-  padding: 6rem 0rem 4rem 0rem !important;
+  padding: 6rem 1.5rem 4rem 1.5rem !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -365,20 +371,19 @@ p {
   align-items: center;
   gap: 4rem;
   align-self: stretch;
-  padding-inline: 2rem !important;
   box-sizing: content-box !important;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .two-columns {
     flex-direction: column !important;
-    padding: 3.5rem 0;
+    padding: 3.5rem 0 !important;
     gap: 3rem;
   }
 }
 @media (max-width: 768px) {
   .two-columns {
     flex-direction: column !important;
-    padding: 3.5rem 0;
+    padding: 3.5rem 0 !important;
     gap: 3rem;
   }
 }
