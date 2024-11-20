@@ -52,7 +52,6 @@ add_filter(
 
         // Remove default shadows.
         $data['settings']['shadow']['default'] = [];
-        error_log('Theme JSON data: ' . print_r($data, true));
 
         // Update the theme data.
         $theme_json->update_with($data);
@@ -66,6 +65,6 @@ add_filter(
  */
 function remove_core_block_patterns()
 {
-  remove_theme_support('core-block-patterns');
+    remove_theme_support('core-block-patterns');
 }
 add_action('init', 'remove_core_block_patterns', 9);
