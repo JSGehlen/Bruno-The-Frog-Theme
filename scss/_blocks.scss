@@ -24,7 +24,7 @@
     }
 
     @include mobile() {
-      padding: $spacing-lg $spacing-sm !important;
+      padding: $spacing-lg 0 !important;
       gap: $spacing-sm !important;
     }
   }
@@ -132,11 +132,11 @@
     flex: 1 0 0;
 
     @include tablet {
-      padding: $spacing-lg;
+      padding: $spacing-lg !important;
     }
 
     @include mobile {
-      padding: $spacing-sm;
+      padding: $spacing-sm !important;
     }
 
     &--title {
@@ -185,7 +185,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--Medium, 2rem);
+    gap: $spacing-md;
 
     h1,
     h2,
@@ -199,7 +199,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: var(--2XS, 0.5rem);
+      gap: $spacing-2xs;
       align-self: stretch;
       margin: 0 !important;
 

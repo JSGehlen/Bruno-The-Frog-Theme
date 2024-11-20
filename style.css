@@ -162,6 +162,20 @@ header .wp-block-group nav {
   margin-block-end: 0 !important;
 }
 
+:where(.wp-block-group.has-background) {
+  padding: revert;
+}
+
+:root :where(.is-layout-constrained) > * {
+  margin-block-start: inherit;
+  margin-block-end: 0;
+}
+
+:root :where(.is-layout-constrained) > * {
+  margin-block-start: inherit !important;
+  margin-block-end: 0;
+}
+
 p {
   line-height: 150%;
 }
@@ -232,7 +246,7 @@ p {
 }
 @media (max-width: 768px) {
   .cta-section__container {
-    padding: 3rem 1.5rem !important;
+    padding: 3rem 0 !important;
     gap: 1.5rem !important;
   }
 }
@@ -343,12 +357,12 @@ p {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .cta-grid__grid-cell {
-    padding: 3rem;
+    padding: 3rem !important;
   }
 }
 @media (max-width: 768px) {
   .cta-grid__grid-cell {
-    padding: 1.5rem;
+    padding: 1.5rem !important;
   }
 }
 .cta-grid__grid-cell--title {
@@ -394,7 +408,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--Medium, 2rem);
+  gap: 2rem;
 }
 .two-columns__text h1,
 .two-columns__text h2,
@@ -407,7 +421,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--2XS, 0.5rem);
+  gap: 0.5rem;
   align-self: stretch;
   margin: 0 !important;
 }

@@ -63,9 +63,6 @@
 				"em",
 				"%"
 			],
-			"blockGap": null,
-			"margin": false,
-			"padding": false,
 			"spacingSizes": [
 				{
 					"size": "0.25rem",
