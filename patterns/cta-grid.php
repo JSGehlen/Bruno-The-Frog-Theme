@@ -10,8 +10,8 @@
  */
 ?>
 
-<!-- wp:group {"metadata":{"name":"Bruno - CTA Grid","categories":["call-to-action"],"patternName":"bruno-the-frog-theme/cta-section"},"align":"full","className":"cta-grid","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"backgroundColor":"off-white","textColor":"black","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cta-grid has-black-color has-off-white-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"metadata":{"name":"Container"},"align":"full","className":"cta-grid__title-container","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Bruno - CTA Grid","categories":["call-to-action"],"patternName":"bruno-the-frog-theme/cta-section"},"align":"full","className":"cta-grid","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"backgroundColor":"off-white","textColor":"black","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull cta-grid has-black-color has-off-white-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"metadata":{"name":"Container"},"align":"full","className":"cta-grid__title-container","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
   <div class="wp-block-group alignfull cta-grid__title-container" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:heading {"textAlign":"center","fontSize":"heading-level-4"} -->
     <h2 class="wp-block-heading has-text-align-center has-heading-level-4-font-size">Miksi sosiaaliseen mediaan panostaminen kannattaa</h2>
     <!-- /wp:heading -->
@@ -132,5 +132,5 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-</div>
+</section>
 <!-- /wp:group -->
