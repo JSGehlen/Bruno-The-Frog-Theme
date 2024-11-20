@@ -106,7 +106,7 @@ body:has(#wpadminbar) .navigation-wrapper {
 main {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: calc(100vh - 16.5rem);
+  min-height: calc(100vh - 264px);
 }
 
 footer {
