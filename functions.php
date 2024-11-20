@@ -8,13 +8,15 @@
  */
 
 /**
- * Enqueue the front-end style.css file.
+ * Enqueue the front-end style.css file with a version for cache-busting.
  */
 function bruno_the_frog_style()
 {
     wp_enqueue_style(
         'bruno-the-frog-style',
-        get_stylesheet_uri()
+        get_stylesheet_uri(),
+        [],
+        filemtime(get_stylesheet_directory() . '/style.css') // Use file modification time as version
     );
 }
 add_action('wp_enqueue_scripts', 'bruno_the_frog_style');
