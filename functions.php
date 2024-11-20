@@ -22,13 +22,21 @@ function bruno_the_frog_style()
 add_action('wp_enqueue_scripts', 'bruno_the_frog_style');
 
 /**
- * Enqueue the editor style.css file.
+ * Enqueue the editor style.css file with cache-busting.
  */
 function bruno_the_frog_editor_style()
 {
-    add_editor_style('style.css'); // This will apply the same styles as the front-end
+    wp_enqueue_style(
+        'bruno-the-frog-editor-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        [],
+        filemtime(get_stylesheet_directory() . '/style.css') // Use file modification time as version
+    );
 }
-add_action('admin_init', 'bruno_the_frog_editor_style');
+add_action('enqueue_block_editor_assets', 'bruno_the_frog_editor_style');
+
+// Enable theme styles in the block editor
+add_theme_support('editor-styles');
 add_theme_support('wp-block-styles');
 
 
