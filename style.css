@@ -118,23 +118,57 @@ section {
 footer {
   background-color: #0A0A0A;
 }
-footer .wp-block-group {
-  padding: 2rem 1.5rem;
+footer .footer-container {
   display: flex;
+  padding: 4rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
   justify-content: space-between;
   max-width: 75rem;
   margin: 0 auto;
   position: relative;
 }
-footer .wp-block-group .footer-frog {
-  margin-top: -6rem;
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-container {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-container .footer-content {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-container .footer-content {
+    flex-direction: column !important;
+  }
+}
+footer .footer-container .footer-frog {
+  pointer-events: none;
+  user-select: none;
+  width: 8rem;
+}
+footer .footer-container .footer-logo {
+  width: 8rem;
   pointer-events: none;
   user-select: none;
 }
-footer .wp-block-group .footer-logo {
-  width: 14rem;
-  pointer-events: none;
-  user-select: none;
+footer .footer-container .footer-socials {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+footer .footer-container .footer-links-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem !important;
 }
 
 header {

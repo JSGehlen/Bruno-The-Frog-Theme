@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 html {
   font-size: 18px;
@@ -32,25 +33,59 @@ section {
 footer {
   background-color: $black;
 
-  .wp-block-group {
-    padding: 2rem $spacing-sm;
+  .footer-container {
     display: flex;
+    padding: $spacing-2xl $spacing-md;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
     justify-content: space-between;
     max-width: $wide-size;
     margin: 0 auto;
     position: relative;
 
+
+    @include tablet {
+      flex-direction: column !important;
+    }
+
+    @include mobile {
+      flex-direction: column !important;
+    }
+
+    .footer-content {
+      @include tablet {
+        flex-direction: column !important;
+      }
+
+      @include mobile {
+        flex-direction: column !important;
+      }
+    }
+
     .footer-frog {
-      margin-top: -6rem;
+      pointer-events: none;
+      user-select: none;
+      width: 8rem;
+    }
+
+    .footer-logo {
+      width: 8rem;
       pointer-events: none;
       user-select: none;
     }
 
-    .footer-logo {
-      width: 14rem;
-      pointer-events: none;
-      user-select: none;
+    .footer-socials {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+    }
 
+    .footer-links-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: $spacing-md !important;
     }
   }
 }
