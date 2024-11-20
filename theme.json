@@ -132,7 +132,7 @@
 							"fontFamily": "\"Roboto\", sans-serif",
 							"fontStretch": "normal",
 							"fontStyle": "medium",
-							"fontWeight": "600",
+							"fontWeight": "500",
 							"src": [
 								"file:./assets/fonts/Roboto/Roboto-Medium.ttf"
 							]
