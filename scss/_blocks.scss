@@ -232,3 +232,41 @@
   gap: 1rem !important;
   padding: 1.5rem !important;
 }
+
+.hero {
+  background-image: url('https://brunothefrog.fi/wp-content/uploads/2024/11/20240925_213516320_iOS.png');
+  background-position: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 10vw !important;
+  min-height: 43rem;
+  background-size: cover;
+
+  @include mobile() {
+    padding-left: 0 !important;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem !important;
+    padding-inline: 1.5rem !important;
+    min-height: 100dvh;
+  }
+
+  &__container {
+    display: flex;
+    width: 24rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+
+    @include mobile() {
+      max-height: 28.75rem !important;
+      padding: $spacing-2xl !important;
+      width: 100%;
+      border-radius: 0.5rem;
+      gap: $spacing-md;
+    }
+  }
+}
