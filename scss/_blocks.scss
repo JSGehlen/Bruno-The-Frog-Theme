@@ -263,10 +263,14 @@
 
     @include mobile() {
       max-height: 28.75rem !important;
-      padding: $spacing-2xl !important;
+      padding: 3rem 2rem !important;
       width: 100%;
       border-radius: 0.5rem;
       gap: $spacing-md;
+
+      img {
+        width: 10rem !important;
+      }
     }
   }
 }

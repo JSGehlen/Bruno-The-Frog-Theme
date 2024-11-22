@@ -517,10 +517,13 @@ p {
 @media (max-width: 768px) {
   .hero__container {
     max-height: 28.75rem !important;
-    padding: 4rem !important;
+    padding: 3rem 2rem !important;
     width: 100%;
     border-radius: 0.5rem;
     gap: 2rem;
+  }
+  .hero__container img {
+    width: 10rem !important;
   }
 }
 
