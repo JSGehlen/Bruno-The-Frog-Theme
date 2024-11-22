@@ -502,7 +502,7 @@ p {
     flex-direction: column;
     padding-bottom: 2rem !important;
     padding-inline: 1.5rem !important;
-    min-height: 100dvh;
+    min-height: 100vh;
   }
 }
 .hero__container {
