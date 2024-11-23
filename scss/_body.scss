@@ -57,10 +57,12 @@ footer {
     .footer-content {
       @include tablet {
         flex-direction: column !important;
+        gap: 1rem;
       }
 
       @include mobile {
         flex-direction: column !important;
+        gap: 1rem;
       }
     }
 
@@ -79,6 +81,16 @@ footer {
     .footer-socials {
       display: flex !important;
       flex-wrap: nowrap !important;
+    }
+
+    .footer-contact {
+      @include tablet {
+        justify-content: center;
+      }
+
+      @include mobile {
+        justify-content: center;
+      }
     }
 
     .footer-links-right {
