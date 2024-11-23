@@ -486,7 +486,7 @@ p {
 }
 
 .hero {
-  background-image: url("https://brunothefrog.fi/wp-content/uploads/2024/11/20240925_213516320_iOS.png");
+  background-image: url("https://brunothefrog.fi/wp-content/uploads/2024/11/brunothefrog_hero_2880x981-scaled.jpg");
   background-position: center;
   width: 100%;
   justify-content: flex-start;
@@ -502,7 +502,9 @@ p {
     flex-direction: column;
     padding-bottom: 2rem !important;
     padding-inline: 1.5rem !important;
-    min-height: 100vh;
+    min-height: 48rem;
+    background-image: url("https://brunothefrog.fi/wp-content/uploads/2024/11/brunothefrog_hero_mobiili.png");
+    background-position: bottom;
   }
 }
 .hero__container {
