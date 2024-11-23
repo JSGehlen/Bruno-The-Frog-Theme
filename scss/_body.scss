@@ -83,13 +83,20 @@ footer {
       flex-wrap: nowrap !important;
     }
 
-    .footer-contact {
+    .footer-contacts {
       @include tablet {
         justify-content: center;
+        p {
+            text-align: center;
+          }
       }
 
       @include mobile {
         justify-content: center;
+
+        p {
+          text-align: center;
+        }
       }
     }
 

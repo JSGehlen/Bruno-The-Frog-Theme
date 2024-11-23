@@ -167,13 +167,19 @@ footer .footer-container .footer-socials {
   flex-wrap: nowrap !important;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  footer .footer-container .footer-contact {
+  footer .footer-container .footer-contacts {
     justify-content: center;
+  }
+  footer .footer-container .footer-contacts p {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
-  footer .footer-container .footer-contact {
+  footer .footer-container .footer-contacts {
     justify-content: center;
+  }
+  footer .footer-container .footer-contacts p {
+    text-align: center;
   }
 }
 footer .footer-container .footer-links-right {
