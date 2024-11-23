@@ -157,6 +157,11 @@ footer .footer-container .footer-frog {
   user-select: none;
   width: 8rem;
 }
+@media (max-width: 768px) {
+  footer .footer-container .footer-frog {
+    width: 4rem;
+  }
+}
 footer .footer-container .footer-logo {
   width: 8rem;
   pointer-events: none;
@@ -169,17 +174,13 @@ footer .footer-container .footer-socials {
 @media (min-width: 769px) and (max-width: 1024px) {
   footer .footer-container .footer-contacts {
     justify-content: center;
-  }
-  footer .footer-container .footer-contacts p {
-    text-align: center !important;
+    align-items: center;
   }
 }
 @media (max-width: 768px) {
   footer .footer-container .footer-contacts {
     justify-content: center;
-  }
-  footer .footer-container .footer-contacts p {
-    text-align: center !important;
+    align-items: center;
   }
 }
 footer .footer-container .footer-links-right {
