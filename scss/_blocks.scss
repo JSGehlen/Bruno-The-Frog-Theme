@@ -249,7 +249,7 @@
     flex-direction: column;
     padding-bottom: 2rem !important;
     padding-inline: 1.5rem !important;
-    min-height: 48rem;
+    min-height: 38rem;
     background-image: url('https://brunothefrog.fi/wp-content/uploads/2024/11/brunothefrog_hero_mobiili.png');
     background-position: bottom;
   }
@@ -265,10 +265,10 @@
 
     @include mobile() {
       max-height: 28.75rem !important;
-      padding: 3rem 2rem !important;
+      padding: 2rem !important;
       width: 100%;
-      border-radius: 0.5rem;
-      gap: $spacing-md;
+      border-radius: 0;
+      gap: $spacing-sm;
 
       img {
         width: 10rem !important;
