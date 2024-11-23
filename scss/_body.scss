@@ -86,16 +86,17 @@ footer {
     .footer-contacts {
       @include tablet {
         justify-content: center;
+
         p {
-            text-align: center;
-          }
+          text-align: center !important;
+        }
       }
 
       @include mobile {
         justify-content: center;
 
         p {
-          text-align: center;
+          text-align: center !important;
         }
       }
     }

@@ -171,7 +171,7 @@ footer .footer-container .footer-socials {
     justify-content: center;
   }
   footer .footer-container .footer-contacts p {
-    text-align: center;
+    text-align: center !important;
   }
 }
 @media (max-width: 768px) {
@@ -179,7 +179,7 @@ footer .footer-container .footer-socials {
     justify-content: center;
   }
   footer .footer-container .footer-contacts p {
-    text-align: center;
+    text-align: center !important;
   }
 }
 footer .footer-container .footer-links-right {
