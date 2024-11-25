@@ -263,6 +263,11 @@
     gap: 4rem;
     align-self: stretch;
 
+    @include tablet() {
+      width: 18rem;
+      gap: 2rem;
+    }
+
     @include mobile() {
       max-height: 28.75rem !important;
       padding: 2rem !important;
