@@ -101,7 +101,6 @@
   &__grid-row {
     display: grid;
     gap: $spacing-md !important;
-    padding-inline: $spacing-md !important;
     box-sizing: content-box;
 
     @include large-desktop {

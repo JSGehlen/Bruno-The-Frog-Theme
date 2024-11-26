@@ -376,7 +376,6 @@ p {
 .cta-grid__grid-row {
   display: grid;
   gap: 2rem !important;
-  padding-inline: 2rem !important;
   box-sizing: content-box;
 }
 @media (min-width: 1241px) {
