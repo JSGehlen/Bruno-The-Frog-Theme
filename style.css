@@ -554,4 +554,31 @@ p {
   }
 }
 
+.bruno-privacy-policy {
+  max-width: 75rem !important;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 6rem 2rem !important;
+  align-content: center;
+}
+.bruno-privacy-policy__text {
+  margin: 0 !important;
+}
+.bruno-privacy-policy__text p,
+.bruno-privacy-policy__text h2 {
+  text-align: left !important;
+  margin-inline: 0 !important;
+}
+.bruno-privacy-policy__text p {
+  margin-top: 1em !important;
+}
+.bruno-privacy-policy__text--list {
+  margin-top: 1em !important;
+}
+.bruno-privacy-policy__text--list ul {
+  margin-top: 1em !important;
+}
+
 /*# sourceMappingURL=style.css.map */

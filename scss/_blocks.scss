@@ -280,3 +280,35 @@
     }
   }
 }
+
+.bruno-privacy-policy {
+  max-width: 75rem !important;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  padding: $spacing-3xl $spacing-md !important;
+  align-content: center;
+
+  &__text {
+    margin: 0 !important;
+
+    p,
+    h2 {
+      text-align: left !important;
+      margin-inline: 0 !important;
+    }
+
+    p {
+      margin-top: 1em !important;
+    }
+
+    &--list {
+      margin-top: 1em !important;
+
+      ul {
+        margin-top: 1em !important;
+      }
+    }
+  }
+}
