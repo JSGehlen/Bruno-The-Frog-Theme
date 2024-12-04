@@ -29,6 +29,14 @@ section {
   padding-block: 0 !important;
   padding-inline: $spacing-sm !important;
   box-sizing: content-box !important;
+
+  &.no-left-padding {
+    padding-left: 0 !important;
+  }
+
+  &.no-inline-padding {
+    padding-inline: 0 !important;
+  }
 }
 
 footer {

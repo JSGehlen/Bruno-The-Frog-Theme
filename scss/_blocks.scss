@@ -4,7 +4,7 @@
 .cta-section {
   &__container {
     display: flex !important;
-    padding: $spacing-xl !important;
+    padding: $spacing-md !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@
 
 .cta-grid {
   display: flex;
-  padding: $spacing-3xl $spacing-sm $spacing-2xl $spacing-sm !important;
+  padding: $spacing-3xl 0 $spacing-2xl 0 !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -102,9 +102,10 @@
     display: grid;
     gap: $spacing-md !important;
     box-sizing: content-box;
+    max-width: 90rem !important;
 
     @include large-desktop {
-      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)) !important;
+      grid-template-columns: 2fr 25rem 2fr !important;
     }
 
     @include desktop {
@@ -129,6 +130,31 @@
     align-items: flex-start;
     gap: $spacing-xs;
     flex: 1 0 0;
+
+    &:nth-child(3n + 1) {
+      padding-left: 25%;
+
+      @include tablet {
+        padding: $spacing-lg !important;
+        padding-left: $spacing-lg !important;
+      }
+
+      @include mobile {
+        padding: $spacing-sm !important;
+      }
+    }
+
+    &:nth-child(3n) {
+      padding-right: 25%;
+
+      @include tablet {
+        padding: $spacing-lg !important;
+      }
+
+      @include mobile {
+        padding: $spacing-sm !important;
+      }
+    }
 
     @include tablet {
       padding: $spacing-lg !important;
@@ -162,6 +188,7 @@
   align-items: center;
   gap: $spacing-2xl;
   align-self: stretch;
+  max-width: 90rem !important;
   box-sizing: content-box !important;
 
   @include tablet {
@@ -232,50 +259,108 @@
   padding: 1.5rem !important;
 }
 
-.hero {
-  background-image: url('https://brunothefrog.fi/wp-content/uploads/2024/11/brunothefrog_hero_2880x981-scaled.jpg');
-  background-position: center;
-  width: 100%;
-  justify-content: flex-start;
-  padding-left: 10vw !important;
-  min-height: 43rem;
-  background-size: cover;
 
-  @include mobile() {
-    padding-left: 0 !important;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 2rem !important;
-    padding-inline: 1.5rem !important;
-    min-height: 38rem;
-    background-image: url('https://brunothefrog.fi/wp-content/uploads/2024/11/brunothefrog_hero_mobiili.png');
-    background-position: bottom;
+.hero {
+  background-color: $latte;
+  max-height: 38rem;
+  height: 100%;
+  gap: 0 !important;
+  max-width: 90rem !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+
+  padding-block: $spacing-2xl;
+
+  @include large-tablet {
+    padding-inline-end: 2rem !important;
+  }
+
+  @include tablet-and-down {
+    max-height: 100%;
   }
 
   &__container {
+    width: 100%;
     display: flex;
-    width: 24rem;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto !important;
+    height: 100%;
+    box-sizing: border-box;
+    padding-inline: 1.5rem !important;
+    gap: $spacing-md;
     align-items: center;
-    gap: 4rem;
-    align-self: stretch;
 
-    @include tablet() {
-      width: 18rem;
-      gap: 2rem;
+    @include tablet-and-down {
+      flex-direction: column-reverse;
+      justify-content: center !important;
     }
 
-    @include mobile() {
-      max-height: 28.75rem !important;
-      padding: 2rem !important;
-      width: 100%;
-      border-radius: 0;
-      gap: $spacing-sm;
+    figure,
+    img {
+      margin: 0 !important;
+      padding: 0;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
-      img {
-        width: 10rem !important;
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 25%;
+    justify-content: center;
+    align-items: center;
+
+    &--bruno {
+      max-width: 30rem !important;
+
+      @include tablet {
+        max-width: 20rem !important;
+      }
+
+      @include mobile {
+        max-width: 12rem !important;
+      }
+    }
+
+    &--bestie {
+      @include mobile {
+        max-width: 12rem !important;
+      }
+    }
+
+    &--collage {
+
+      @include large-tablet {
+        max-width: 34rem !important;
+      }
+
+      @include tablet {
+        max-width: 36rem !important;
+      }
+
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // flex: 3 0 75%;
+    justify-content: center;
+
+    @include tablet-and-down {
+      height: auto;
+      flex: none;
+    }
+
+    figure {
+      margin: 0 !important;
+    }
+
+    img {
+      @include tablet-and-down {
+        height: auto !important;
       }
     }
   }
