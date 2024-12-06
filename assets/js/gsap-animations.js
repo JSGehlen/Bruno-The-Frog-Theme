@@ -4,24 +4,21 @@ const animationsAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)')
 if (animationsAllowed) {
   gsap.registerPlugin(ScrollTrigger);
 
-  // Animate cells with staggered random animations
+  // Animate each cell individually (staggered random animations)
   const cells = document.querySelectorAll('.cta-grid__grid-cell');
-  const totalDuration = 1.5; // Total animation time for all cells
-  const duration = 0.5; // Each cell's animation duration
-  const stagger = (totalDuration - duration) / (cells.length - 1); // Calculate stagger delay
-
-  gsap.from(cells, {
-    opacity: 0,
-    y: () => gsap.utils.random(-50, 50), // Random vertical movement
-    x: () => gsap.utils.random(-20, 20), // Random horizontal movement
-    duration: duration, // Each animation lasts 0.5 seconds
-    ease: 'power1.out', // Smooth easing
-    stagger: stagger, // Delay between animations
-    scrollTrigger: {
-      trigger: '.cta-grid__grid-row', // The grid container
-      start: 'top 80%', // Start animation when grid enters viewport
-      toggleActions: 'play none none reset', // Replay on re-entry
-    },
+  cells.forEach((cell) => {
+    gsap.from(cell, {
+      opacity: 0,
+      y: () => gsap.utils.random(-50, 50), // Random vertical movement
+      x: () => gsap.utils.random(-20, 20), // Random horizontal movement
+      duration: 0.5,
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: cell,
+        start: 'top 80%',
+        toggleActions: 'play none none reset',
+      },
+    });
   });
 
   // Helper function to apply animations
