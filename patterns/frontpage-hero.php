@@ -15,7 +15,7 @@
   <div class="wp-block-group hero"><!-- wp:group {"metadata":{"name":"Container"},"className":"hero__container","layout":{"type":"constrained"}} -->
     <div class="wp-block-group hero__container"><!-- wp:group {"className":"hero__img","layout":{"type":"constrained"}} -->
       <div class="wp-block-group hero__img"><!-- wp:image {"scale":"cover","sizeSlug":"large","className":"hero__cta\u002d\u002dcollage"} -->
-        <figure class="wp-block-image size-large hero__cta--collage"><img src="https://brunothefrog.fi/wp-content/uploads/2024/12/brunothefrog_hero_lennokki_vihrea.png" alt="" style="object-fit:cover" /></figure>
+        <figure class="wp-block-image size-large hero__cta--collage"><img src="https://brunothefrog.fi/wp-content/uploads/2024/12/brunothefrog_etusivu_hero.png" alt="" style="object-fit:cover" /></figure>
         <!-- /wp:image -->
       </div>
       <!-- /wp:group -->
