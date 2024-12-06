@@ -33,9 +33,9 @@ if (animationsAllowed) {
     } else if (element.classList.contains('fade-in-from-top')) {
       animationConfig.y = -50;
     } else if (element.classList.contains('fade-in-from-left')) {
-      animationConfig.x = -50;
+      animationConfig.x = Math.min(-50, -window.innerWidth / 10); // Limit movement to a fraction of the viewport width
     } else if (element.classList.contains('fade-in-from-right')) {
-      animationConfig.x = 50;
+      animationConfig.x = Math.min(50, window.innerWidth / 10); // Same for right movement
     }
 
     gsap.fromTo(
