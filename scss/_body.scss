@@ -32,6 +32,10 @@ section {
 
   &.no-left-padding {
     padding-left: 0 !important;
+
+    @include tablet-and-down {
+      padding-inline: 1.5rem !important;
+    }
   }
 
   &.no-inline-padding {
@@ -96,15 +100,8 @@ footer {
     }
 
     .footer-contacts {
-      @include tablet {
-        justify-content: center;
-        align-items: center;
-      }
-
-      @include mobile {
-        justify-content: center;
-        align-items: center;
-      }
+      justify-content: center;
+      align-items: center;
     }
 
     .footer-links-right {
