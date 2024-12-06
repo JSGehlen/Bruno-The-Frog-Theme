@@ -13,6 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body:has(#wpadminbar) .navigation-wrapper {
