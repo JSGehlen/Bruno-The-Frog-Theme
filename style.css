@@ -664,4 +664,35 @@ p {
   margin-top: 1em !important;
 }
 
+.bruno-grid {
+  padding-block: 3.5rem !important;
+}
+
+.bruno-grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wp--preset--spacing--md);
+  align-items: stretch;
+}
+
+.bruno-grid__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 1 1 calc(25% - var(--wp--preset--spacing--md));
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bruno-grid__cell {
+    flex: 1 1 calc(50% - var(--wp--preset--spacing--md));
+  }
+}
+@media (max-width: 768px) {
+  .bruno-grid__cell {
+    flex: 1 1 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

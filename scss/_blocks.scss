@@ -397,3 +397,35 @@
     }
   }
 }
+
+.bruno-grid {
+  padding-block: $spacing-xl !important;
+}
+
+.bruno-grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wp--preset--spacing--md);
+  align-items: stretch;
+}
+
+.bruno-grid__cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 1 1 calc(25% - var(--wp--preset--spacing--md));
+  box-sizing: border-box;
+}
+
+@include tablet {
+  .bruno-grid__cell {
+    flex: 1 1 calc(50% - var(--wp--preset--spacing--md));
+  }
+}
+
+@include mobile {
+  .bruno-grid__cell {
+    flex: 1 1 100%;
+  }
+}
