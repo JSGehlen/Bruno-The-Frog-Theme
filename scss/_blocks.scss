@@ -403,10 +403,10 @@
 }
 
 .bruno-grid__row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--wp--preset--spacing--md);
-  align-items: stretch;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: var(--wp--preset--spacing--md) !important;
+  align-items: stretch !important;
 }
 
 .bruno-grid__cell {
