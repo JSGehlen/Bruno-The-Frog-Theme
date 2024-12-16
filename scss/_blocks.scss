@@ -268,7 +268,7 @@
   max-width: 90rem !important;
   box-sizing: border-box !important;
   width: 100% !important;
-
+  position: relative;
   padding-block: $spacing-2xl;
 
   @include large-tablet {
@@ -277,6 +277,13 @@
 
   @include tablet-and-down {
     max-height: 100%;
+  }
+
+  &__social-links {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    z-index: 999;
   }
 
   &__container {

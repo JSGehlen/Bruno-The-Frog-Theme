@@ -543,6 +543,7 @@ p {
   max-width: 90rem !important;
   box-sizing: border-box !important;
   width: 100% !important;
+  position: relative;
   padding-block: 4rem;
 }
 @media (min-width: 1025px) and (max-width: 1194px) {
@@ -554,6 +555,12 @@ p {
   .hero {
     max-height: 100%;
   }
+}
+.hero__social-links {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 999;
 }
 .hero__container {
   width: 100%;
