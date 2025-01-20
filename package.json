@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "styles": "npx sass --watch scss/style.scss:style.css",
+    "styles": "chokidar 'scss/*.scss' -c 'npm run build-css'",
+    "build-css": "npx sass scss/style.scss:temp-style.css && cat metadata.css temp-style.css > style.css && rm temp-style.css",
     "generate-vars": "node generate-scss-vars.js",
     "watch-vars": "chokidar 'theme.json' -c 'npm run generate-vars'"
   },
