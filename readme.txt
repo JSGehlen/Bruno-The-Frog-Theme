@@ -1,6 +1,8 @@
 == Bruno The Frog ==
 
-Contributors: Jeremy Gehlen
+Version: 1.1.1
+Author: Jeremy Gehlen tmi
+Contributors: Jeremy Gehlen tmi
 Requires at least: 6.6
 Tested up to: 6.6
 Requires PHP: 5.7
