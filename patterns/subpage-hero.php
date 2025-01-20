@@ -27,7 +27,7 @@
     <!-- /wp:group -->
 
     <!-- wp:image {"id":342,"sizeSlug":"full","linkDestination":"none","className":"img"} -->
-    <figure class="wp-block-image size-full img"><img src="http://bruno-the-frog.local/wp-content/uploads/2025/01/Rectangle-2849.png" alt="" class="wp-image-342" /></figure>
+    <figure class="wp-block-image size-full img"><img src="https://brunothefrog.fi/wp-content/uploads/2025/01/Rectangle-2849.png" alt="" class="wp-image-342" /></figure>
     <!-- /wp:image -->
 
     <!-- wp:group {"className":"bruno-subpage-hero__container__content is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|2xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
