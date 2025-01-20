@@ -31,6 +31,109 @@
 
 }
 
+.section {
+  &__container {
+    max-width: $wide-size !important;
+    margin: 0 auto !important;
+    position: relative;
+
+    @include mobile() {
+      padding: $spacing-lg 0 !important;
+      gap: $spacing-md !important;
+    }
+
+    figure.sitting-bruno {
+      position: absolute;
+      position: absolute;
+      right: 0;
+      width: 12rem;
+      bottom: 0;
+      transform: translateY(80%);
+      z-index: 2;
+
+      @include mobile() {}
+    }
+
+  }
+
+  &.bulleted {
+    .section__container {
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+
+      figure {
+        @include mobile() {
+          position: absolute;
+          right: -1rem;
+          width: 4rem;
+          bottom: 0.5rem;
+        }
+      }
+
+      @include mobile {
+        flex-direction: column;
+
+        &.no-gap {
+          gap: 0 !important;
+          padding-top: 1.5rem !important;
+        }
+      }
+
+    }
+  }
+
+  &__bullet-list {
+    list-style: none;
+
+    @include mobile() {
+      padding: 0;
+      padding-left: 1.5rem;
+    }
+
+
+
+    li {
+      position: relative;
+      margin-top: 1rem;
+
+      &:nth-last-of-type(2) {
+        padding-right: 1.5rem;
+      }
+
+      &:last-of-type {
+        padding-right: 1.5rem;
+      }
+
+      &::before {
+        content: "";
+        background-image: url('https://brunothefrog.fi/wp-content/uploads/2025/01/bruno-bullet.svg');
+        height: 2rem;
+        width: 1rem;
+        display: block;
+        position: absolute;
+        left: -1.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.purple::before {
+        content: "";
+        background-image: url('https://brunothefrog.fi/wp-content/uploads/2025/01/bruno-bullet-purple.svg');
+        height: 2rem;
+        width: 1rem;
+        display: block;
+        position: absolute;
+        left: -1.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+}
+
+
 .cta-grid {
   display: flex;
   padding: $spacing-3xl 0 $spacing-2xl 0 !important;
@@ -191,6 +294,10 @@
   max-width: 90rem !important;
   box-sizing: content-box !important;
 
+  &__content {
+    max-width: 75rem !important;
+  }
+
   @include tablet {
     flex-direction: column !important;
     padding: $spacing-xl 0 !important;
@@ -248,6 +355,10 @@
   img {
     width: 100% !important;
   }
+}
+
+.align-top {
+  align-items: flex-start !important;
 }
 
 .maintenance {
@@ -434,5 +545,237 @@
 @include mobile {
   .bruno-grid__cell {
     flex: 1 1 100%;
+  }
+}
+
+.bruno-services {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  @include mobile {
+    padding-block: 2.5rem !important;
+    gap: $spacing-md !important;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 !important;
+
+    &--item {
+      flex: 1 1 calc(33.333% - 2rem);
+      max-width: calc(33.333% - 2rem);
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem 0 !important;
+
+      &--content {
+        flex: 1;
+      }
+
+      @include tablet {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+      }
+
+      @include mobile {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.icon-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  max-width: 11rem;
+  max-height: 11rem;
+  border-radius: 11rem;
+  box-sizing: border-box;
+
+  img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+.bruno-subpage-hero {
+  --hero-height: 25rem;
+
+
+  &__container {
+    display: flex;
+    align-content: flex-end !important;
+    max-width: 75rem !important;
+    margin: 0 auto !important;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    min-height: var(--hero-height);
+    position: relative;
+
+    figure.img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+
+      @include mobile {
+        padding-top: 0;
+        padding-bottom: 3rem;
+        width: calc(100% - 3rem);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('https://brunothefrog.fi/wp-content/uploads/2025/01/perhonen-banner.png');
+        background-size: contain;
+        z-index: 2;
+
+        @include mobile {
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      img {
+        width: 80%;
+        overflow: hidden;
+        border-radius: 62.4375rem;
+
+        @include mobile {
+          width: 100%;
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    &__social-links {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+      z-index: 999;
+
+      @include mobile {
+        display: none !important;
+      }
+    }
+
+    @include tablet {
+      --hero-height: 20rem;
+      align-content: center !important;
+      margin: 1.5rem !important;
+    }
+
+    @include mobile {
+      --hero-height: 16rem;
+      flex-direction: column-reverse;
+      align-content: center !important;
+      padding: 0 !important;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: $spacing-md;
+      margin: 0 auto !important;
+      min-height: var(--hero-height);
+      max-width: 25rem;
+      text-align: center;
+
+      @include tablet {
+        --hero-height: 20rem;
+        padding: $spacing-sm;
+      }
+
+      @include mobile {
+        --hero-height: auto;
+        padding: 3rem 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.bruno-image-row {
+  figure {
+    height: 100%;
+  }
+
+  @include tablet-and-down {
+    flex-direction: column;
+  }
+}
+
+.bruno-text-box {
+  @include mobile {
+    padding-inline: 1.5rem !important;
+  }
+}
+
+.circle-number {
+  height: 4.5rem;
+  min-width: 4.5rem;
+  border-radius: 9999px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    line-height: 100%;
+  }
+
+  @include mobile {
+    height: 3rem;
+    min-width: 3rem;
+
+    p {
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+.service-section {
+  box-sizing: content-box !important;
+  padding-inline: 1.5rem;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: $spacing-md;
+  }
+}
+
+.service-pointer {
+  @include mobile {
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 1rem !important;
+  }
+}
+
+.service-description {
+  @include mobile {
+    margin-bottom: 0.5rem !important;
   }
 }

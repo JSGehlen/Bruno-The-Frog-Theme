@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "blockTypes": [
+    "core/group"
+  ],
+  "slug": "off-white",
+  "title": "Off-White",
+  "styles": {
+    "color": {
+      "background": "var:preset|color|off-white",
+      "text": "var:preset|color|black"
+    }
+  }
+}

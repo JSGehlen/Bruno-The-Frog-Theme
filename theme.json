@@ -24,6 +24,11 @@
 					"name": "Forest Green"
 				},
 				{
+					"color": "#4C6B04",
+					"slug": "green-darker",
+					"name": "Green Darker"
+				},
+				{
 					"color": "#F6F5F1",
 					"slug": "off-white",
 					"name": "Off White"
@@ -42,6 +47,16 @@
 					"color": "#ffffff",
 					"slug": "white",
 					"name": "White"
+				},
+				{
+					"color": "#DFEBB5",
+					"slug": "light-green",
+					"name": "Light Green"
+				},
+				{
+					"color": "#D8BFCA",
+					"slug": "pink",
+					"name": "Pink"
 				}
 			]
 		},
@@ -242,24 +257,6 @@
 	"styles": {
 		"typography": {
 			"fontFamily": "--wp--preset--font-family--roboto"
-		},
-		"blocks": {
-			"core/group": {
-				"variations": {
-					"Green": {
-						"backgroundColor": "green",
-						"color": "white"
-					},
-					"2": {
-						"padding": {
-							"top": "lg",
-							"right": "lg",
-							"bottom": "lg",
-							"left": "lg"
-						}
-					}
-				}
-			}
 		}
 	},
 	"templateParts": [

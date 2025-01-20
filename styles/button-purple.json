@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "blockTypes": [
+    "core/button"
+  ],
+  "slug": "purple",
+  "title": "Purple",
+  "styles": {
+    "color": {
+      "background": "var:preset|color|purple",
+      "text": "var:preset|color|off-white"
+    }
+  }
+}

@@ -111,6 +111,10 @@ main {
   min-height: calc(100vh - 16.5rem);
 }
 
+.wp-element-button {
+  text-transform: uppercase;
+}
+
 section {
   padding-block: 0 !important;
   padding-inline: 1.5rem !important;
@@ -307,6 +311,90 @@ p {
   }
 }
 
+.section__container {
+  max-width: 75rem !important;
+  margin: 0 auto !important;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .section__container {
+    padding: 3rem 0 !important;
+    gap: 2rem !important;
+  }
+}
+.section__container figure.sitting-bruno {
+  position: absolute;
+  position: absolute;
+  right: 0;
+  width: 12rem;
+  bottom: 0;
+  transform: translateY(80%);
+  z-index: 2;
+}
+.section.bulleted .section__container {
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .section.bulleted .section__container figure {
+    position: absolute;
+    right: -1rem;
+    width: 4rem;
+    bottom: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .section.bulleted .section__container {
+    flex-direction: column;
+  }
+  .section.bulleted .section__container.no-gap {
+    gap: 0 !important;
+    padding-top: 1.5rem !important;
+  }
+}
+.section__bullet-list {
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .section__bullet-list {
+    padding: 0;
+    padding-left: 1.5rem;
+  }
+}
+.section__bullet-list li {
+  position: relative;
+  margin-top: 1rem;
+}
+.section__bullet-list li:nth-last-of-type(2) {
+  padding-right: 1.5rem;
+}
+.section__bullet-list li:last-of-type {
+  padding-right: 1.5rem;
+}
+.section__bullet-list li::before {
+  content: "";
+  background-image: url("https://brunothefrog.fi/wp-content/uploads/2025/01/bruno-bullet.svg");
+  height: 2rem;
+  width: 1rem;
+  display: block;
+  position: absolute;
+  left: -1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section__bullet-list li.purple::before {
+  content: "";
+  background-image: url("https://brunothefrog.fi/wp-content/uploads/2025/01/bruno-bullet-purple.svg");
+  height: 2rem;
+  width: 1rem;
+  display: block;
+  position: absolute;
+  left: -1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .cta-grid {
   display: flex;
   padding: 6rem 0 4rem 0 !important;
@@ -471,6 +559,9 @@ p {
   max-width: 90rem !important;
   box-sizing: content-box !important;
 }
+.two-columns__content {
+  max-width: 75rem !important;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
   .two-columns {
     flex-direction: column !important;
@@ -524,6 +615,10 @@ p {
 }
 .flex-one img {
   width: 100% !important;
+}
+
+.align-top {
+  align-items: flex-start !important;
 }
 
 .maintenance {
@@ -697,6 +792,236 @@ p {
 @media (max-width: 768px) {
   .bruno-grid__cell {
     flex: 1 1 100%;
+  }
+}
+.bruno-services {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .bruno-services {
+    padding-block: 2.5rem !important;
+    gap: 2rem !important;
+  }
+}
+.bruno-services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 !important;
+}
+.bruno-services__container--item {
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 !important;
+}
+.bruno-services__container--item--content {
+  flex: 1;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bruno-services__container--item {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+@media (max-width: 768px) {
+  .bruno-services__container--item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.icon-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  max-width: 11rem;
+  max-height: 11rem;
+  border-radius: 11rem;
+  box-sizing: border-box;
+}
+.icon-backdrop img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.bruno-subpage-hero {
+  --hero-height: 25rem;
+}
+.bruno-subpage-hero__container {
+  display: flex;
+  align-content: flex-end !important;
+  max-width: 75rem !important;
+  margin: 0 auto !important;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  min-height: var(--hero-height);
+  position: relative;
+}
+.bruno-subpage-hero__container figure.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .bruno-subpage-hero__container figure.img {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    width: calc(100% - 3rem);
+  }
+}
+.bruno-subpage-hero__container figure.img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://brunothefrog.fi/wp-content/uploads/2025/01/perhonen-banner.png");
+  background-size: contain;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .bruno-subpage-hero__container figure.img::after {
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.bruno-subpage-hero__container figure.img img {
+  width: 80%;
+  overflow: hidden;
+  border-radius: 62.4375rem;
+}
+@media (max-width: 768px) {
+  .bruno-subpage-hero__container figure.img img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+.bruno-subpage-hero__container__social-links {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 999;
+}
+@media (max-width: 768px) {
+  .bruno-subpage-hero__container__social-links {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bruno-subpage-hero__container {
+    --hero-height: 20rem;
+    align-content: center !important;
+    margin: 1.5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .bruno-subpage-hero__container {
+    --hero-height: 16rem;
+    flex-direction: column-reverse;
+    align-content: center !important;
+    padding: 0 !important;
+  }
+}
+.bruno-subpage-hero__container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 auto !important;
+  min-height: var(--hero-height);
+  max-width: 25rem;
+  text-align: center;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bruno-subpage-hero__container__content {
+    --hero-height: 20rem;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .bruno-subpage-hero__container__content {
+    --hero-height: auto;
+    padding: 3rem 0;
+    padding-bottom: 0;
+  }
+}
+
+.bruno-image-row figure {
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .bruno-image-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .bruno-text-box {
+    padding-inline: 1.5rem !important;
+  }
+}
+
+.circle-number {
+  height: 4.5rem;
+  min-width: 4.5rem;
+  border-radius: 9999px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-number p {
+  line-height: 100%;
+}
+@media (max-width: 768px) {
+  .circle-number {
+    height: 3rem;
+    min-width: 3rem;
+  }
+  .circle-number p {
+    font-size: 1.5rem !important;
+  }
+}
+
+.service-section {
+  box-sizing: content-box !important;
+  padding-inline: 1.5rem;
+}
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-pointer {
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-description {
+    margin-bottom: 0.5rem !important;
   }
 }
 
