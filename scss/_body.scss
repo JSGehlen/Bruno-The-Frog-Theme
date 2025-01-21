@@ -32,8 +32,12 @@ main {
 
 section {
   padding-block: 0 !important;
-  padding-inline: $spacing-sm !important;
+  padding-inline: $spacing-lg !important;
   box-sizing: content-box !important;
+
+  @include mobile {
+    padding-inline: $spacing-sm !important;
+  }
 
   &.no-left-padding {
     padding-left: 0 !important;
@@ -162,4 +166,28 @@ header {
 
 p {
   line-height: 150%;
+}
+
+.is-style-pink a:not(.wp-block-button__link),
+.is-style-light-green a:not(.wp-block-button__link),
+.is-style-latte a:not(.wp-block-button__link),
+.is-style-latte-latte-btn a:not(.wp-block-button__link),
+.is-style-default a:not(.wp-block-button__link) {
+  color: $purple !important;
+}
+
+.is-style-purple a:not(.wp-block-button__link),
+.is-style-forest-green a:not(.wp-block-button__link),
+.is-style-black a:not(.wp-block-button__link) {
+  color: $green !important;
+}
+
+.is-style-off-white a:not(.wp-block-button__link),
+.is-style-off-white-purple-btn a:not(.wp-block-button__link),
+.is-style-off-white-green-btn a:not(.wp-block-button__link) {
+  color: $green-darker !important;
+}
+
+.is-style-neon-green a:not(.wp-block-button__link) {
+  color: $black !important;
 }
