@@ -192,22 +192,22 @@
 			"fontSizes": [
 				{
 					"name": "Heading Level 1",
-					"size": "4.25rem",
+					"size": "4rem",
 					"slug": "heading-level-1"
 				},
 				{
 					"name": "Heading Level 2",
-					"size": "3.5rem",
+					"size": "3rem",
 					"slug": "heading-level-2"
 				},
 				{
 					"name": "Heading Level 3",
-					"size": "2.75rem",
+					"size": "2.5rem",
 					"slug": "heading-level-3"
 				},
 				{
 					"name": "Heading Level 4",
-					"size": "2.25rem",
+					"size": "2rem",
 					"slug": "heading-level-4"
 				},
 				{
