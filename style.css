@@ -357,6 +357,9 @@ p {
   margin: 0 auto !important;
   position: relative;
 }
+.section__container p {
+  max-width: 55rem !important;
+}
 @media (max-width: 768px) {
   .section__container {
     padding: 3rem 0 !important;

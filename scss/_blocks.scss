@@ -37,6 +37,10 @@
     margin: 0 auto !important;
     position: relative;
 
+    p {
+      max-width: 55rem !important;
+    }
+
     @include mobile() {
       padding: $spacing-lg 0 !important;
       gap: $spacing-md !important;
