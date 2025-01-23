@@ -1084,6 +1084,38 @@ p {
   }
 }
 
+.notfound-page__container {
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative;
+  height: 100%;
+  min-height: calc(100vh - 16.5rem);
+  width: 100%;
+  margin: 0 auto !important;
+  max-width: 75rem;
+  box-sizing: border-box !important;
+}
+@media (max-width: 768px) {
+  .notfound-page__container {
+    min-height: 100vh !important;
+  }
+}
+.notfound-page__container h1 {
+  font-size: clamp(3rem, 20vw, 16rem) !important;
+  line-height: 100% !important;
+}
+.notfound-page__container figure {
+  max-width: 256px !important;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+@media (max-width: 1024px) {
+  .notfound-page__container figure {
+    max-width: 128px !important;
+  }
+}
+
 :root {
   --wp--preset--color--green: #98CE00;
   --wp--preset--color--purple: #7E1D56;
@@ -1172,7 +1204,7 @@ p {
   color: #ffffff !important;
 }
 .is-style-pink .is-style-purple .wp-block-button__link {
-  background-color: #4d0a31 !important;
+  background-color: #7E1D56 !important;
 }
 .is-style-pink .is-style-purple .wp-block-button__link:hover {
   background-color: #971d65 !important;
@@ -1187,7 +1219,7 @@ p {
   color: #ffffff !important;
 }
 .is-style-off-white .is-style-purple .wp-block-button__link {
-  background-color: #4d0a31 !important;
+  background-color: #7E1D56 !important;
 }
 .is-style-off-white .is-style-purple .wp-block-button__link:hover {
   background-color: #971d65 !important;
@@ -1205,7 +1237,7 @@ p {
   color: #ffffff !important;
 }
 .is-style-off-white-purple-btn .is-style-purple .wp-block-button__link {
-  background-color: #4d0a31 !important;
+  background-color: #7E1D56 !important;
 }
 .is-style-off-white-purple-btn .is-style-purple .wp-block-button__link:hover {
   background-color: #971d65 !important;
