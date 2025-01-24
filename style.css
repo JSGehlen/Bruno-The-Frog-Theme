@@ -209,7 +209,7 @@ footer .footer-container .footer-links-right {
 }
 @media (max-width: 768px) {
   footer .footer-container .footer-links {
-    justify-content: center !important;
+    align-items: center !important;
   }
 }
 
@@ -351,6 +351,11 @@ p {
 .slick-next::before,
 .slick-prev::before {
   color: #7E1D56 !important;
+}
+
+textarea {
+  resize: vertical;
+  max-width: 100%;
 }
 
 :root {
@@ -1280,6 +1285,17 @@ p {
   .two-column-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.banner {
+  --max-height: 23.75rem;
+}
+.banner figure {
+  max-height: var(--max-height);
+}
+.banner img {
+  object-fit: cover;
+  max-height: var(--max-height);
 }
 
 :root {

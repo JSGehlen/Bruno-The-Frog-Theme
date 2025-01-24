@@ -115,7 +115,7 @@ footer {
 
     .footer-links {
       @include mobile {
-        justify-content: center !important;
+        align-items: center !important;
       }
     }
   }
@@ -267,4 +267,9 @@ p {
 .slick-next::before,
 .slick-prev::before {
   color: $purple !important;
+}
+
+textarea {
+  resize: vertical;
+  max-width: 100%;
 }

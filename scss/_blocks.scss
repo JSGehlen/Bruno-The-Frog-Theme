@@ -930,3 +930,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+.banner {
+  --max-height: 23.75rem;
+
+  figure {
+    max-height: var(--max-height);
+  }
+
+  img {
+    object-fit: cover;
+    max-height: var(--max-height);
+  }
+}
