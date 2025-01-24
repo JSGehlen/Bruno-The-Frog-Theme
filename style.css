@@ -1266,6 +1266,17 @@ p {
   display: none !important;
 }
 
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .two-column-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 :root {
   --wp--preset--color--green: #98CE00;
   --wp--preset--color--purple: #7E1D56;
