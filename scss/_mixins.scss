@@ -28,8 +28,15 @@
   }
 }
 
+
 @mixin large-desktop {
   @media (min-width: 1241px) {
+    @content;
+  }
+}
+
+@mixin desktop-and-up {
+  @media (min-width: 1025px) {
     @content;
   }
 }

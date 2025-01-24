@@ -120,3 +120,21 @@ function enqueue_gsap_and_dependencies()
     );
 }
 add_action('wp_enqueue_scripts', 'enqueue_gsap_and_dependencies');
+
+add_filter('the_content', function ($content) {
+    // Replace "Prev" button with SVG
+    $content = preg_replace(
+        '/<button\s+class="glide__arrow\s+glide__arrow--left"[^>]*>.*?<\/button>/',
+        '<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg width="15" height="27" viewBox="0 0 15 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1L1 13.5L14 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>',
+        $content
+    );
+
+    // Replace "Next" button with SVG
+    $content = preg_replace(
+        '/<button\s+class="glide__arrow\s+glide__arrow--right"[^>]*>.*?<\/button>/',
+        '<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg width="15" height="27" viewBox="0 0 15 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 26L14 13.5L0.999997 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>',
+        $content
+    );
+
+    return $content;
+});

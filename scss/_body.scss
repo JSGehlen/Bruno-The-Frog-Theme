@@ -20,12 +20,6 @@ body:has(#wpadminbar) .navigation-wrapper {
   top: 2.5rem !important;
 }
 
-main {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: calc(100vh - 16.5rem);
-}
-
 .wp-element-button {
   text-transform: uppercase;
 }
@@ -190,4 +184,81 @@ p {
 
 .is-style-neon-green a:not(.wp-block-button__link) {
   color: $black !important;
+}
+
+.ml-auto {
+  @include desktop-and-up {
+    margin-left: auto !important;
+  }
+}
+
+.mr-auto {
+  @include desktop-and-up {
+    margin-right: auto !important;
+  }
+}
+
+.mobile-center {
+  @include mobile {
+    flex-wrap: wrap !important;
+    display: flex;
+    justify-content: center;
+
+    img {
+      min-width: 128px !important;
+    }
+  }
+}
+
+.mobile-center.wp-block-columns.is-not-stacked-on-mobile {
+  @include mobile {
+    flex-wrap: wrap !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.max-w-50 {
+  max-width: 50rem !important;
+}
+
+.max-w-fit {
+  max-width: fit-content !important;
+}
+
+.flex-col-reverse {
+  @include mobile {
+    flex-direction: column-reverse !important;
+  }
+}
+
+.gap-2 {
+  gap: 2rem !important;
+}
+
+.gap-4 {
+  gap: 4rem !important;
+}
+
+.three-columns {
+  &__cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &--content {
+      flex: 1;
+    }
+  }
+}
+
+.slick-next::before,
+.slick-prev::before {
+  color: $purple !important;
 }
