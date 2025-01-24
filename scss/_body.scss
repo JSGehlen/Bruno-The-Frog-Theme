@@ -112,6 +112,12 @@ footer {
       align-items: center;
       gap: $spacing-md !important;
     }
+
+    .footer-links {
+      @include mobile {
+        justify-content: center !important;
+      }
+    }
   }
 }
 

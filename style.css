@@ -207,6 +207,11 @@ footer .footer-container .footer-links-right {
   align-items: center;
   gap: 2rem !important;
 }
+@media (max-width: 768px) {
+  footer .footer-container .footer-links {
+    justify-content: center !important;
+  }
+}
 
 header {
   height: 100%;
