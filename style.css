@@ -1262,6 +1262,10 @@ p {
   }
 }
 
+.hide {
+  display: none !important;
+}
+
 :root {
   --wp--preset--color--green: #98CE00;
   --wp--preset--color--purple: #7E1D56;
