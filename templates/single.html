@@ -1,0 +1,54 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"className":"post-container","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<main class="wp-block-group post-container">
+  <!-- wp:group {"metadata":{"name":"Post Banner","patternName":"bruno-the-frog-theme/bruno-post-banner"},"align":"full","className":"banner post","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group alignfull banner post"><!-- wp:post-featured-image {"align":"full"} /--></div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"tagName":"section","metadata":{"name":"Post Header","patternName":"bruno-the-frog-theme/bruno-post-header"},"align":"full","className":"section is-style-forest-green","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+  <section class="wp-block-group alignfull section is-style-forest-green"
+    style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+    <!-- wp:group {"metadata":{"name":"Container"},"align":"full","className":"section__container","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|lg"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|md"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group alignfull section__container"
+      style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)">
+      <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+      <div class="wp-block-group">
+        <!-- wp:post-date {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} /-->
+
+        <!-- wp:post-title {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|green"}}}},"textColor":"green","fontSize":"heading-level-2"} /-->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:post-excerpt {"textAlign":"center","fontSize":"paragraph"} /-->
+    </div>
+    <!-- /wp:group -->
+  </section>
+  <!-- /wp:group -->
+
+  <!-- wp:post-content {"layout":{"type":"constrained","contentSize":"75rem"}} /-->
+
+</main>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Latest Posts"},"className":"latest-posts is-style-off-white-purple-btn","layout":{"type":"default"}} -->
+<section class="wp-block-group latest-posts is-style-off-white-purple-btn">
+  <!-- wp:group {"metadata":{"name":"Container"},"className":"latest-posts__container","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group latest-posts__container">
+    <!-- wp:buttons {"className":"all-posts-btn","layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons all-posts-btn"><!-- wp:button -->
+      <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blogi">Kaikki
+          artikkelit</a></div>
+      <!-- /wp:button -->
+    </div>
+    <!-- /wp:buttons -->
+
+    <!-- wp:heading {"textAlign":"center","fontSize":"heading-level-3"} -->
+    <h2 class="wp-block-heading has-text-align-center has-heading-level-3-font-size">Sinua saattaisi kiinnostaa myös
+      nämä</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"excerptLength":28,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide"} /-->
+  </div>
+  <!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

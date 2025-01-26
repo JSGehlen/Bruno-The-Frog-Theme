@@ -934,6 +934,10 @@
 .banner {
   --max-height: 23.75rem;
 
+  &.post {
+    --max-height: 30rem;
+  }
+
   figure {
     max-height: var(--max-height);
   }

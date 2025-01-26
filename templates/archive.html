@@ -1,0 +1,98 @@
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"metadata":{"name":"Subpage Hero","categories":["hero"],"patternName":"bruno-the-frog-theme/subpage-hero"},"align":"full","className":"bruno-subpage-hero is-style-latte","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignfull bruno-subpage-hero is-style-latte">
+  <!-- wp:group {"className":"bruno-subpage-hero__container","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div class="wp-block-group bruno-subpage-hero__container">
+    <!-- wp:group {"className":"bruno-subpage-hero__container__social-links","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group bruno-subpage-hero__container__social-links">
+      <!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"1","scale":"contain","sizeSlug":"large","linkDestination":"custom"} -->
+      <figure class="wp-block-image size-large"><a href="https://www.facebook.com/people/Bruno-the-Frog/61568183092568/"
+          target="_blank" rel=" noreferrer noopener" aria-label="Bruno the Frog Facebook"><img
+            src="https://brunothefrog.fi/wp-content/uploads/2025/01/brunofb.svg" alt=""
+            style="aspect-ratio:1;object-fit:contain" /></a></figure>
+      <!-- /wp:image -->
+
+      <!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"1","scale":"contain","sizeSlug":"large","linkDestination":"custom"} -->
+      <figure class="wp-block-image size-large"><a href="https://www.instagram.com/bruno_the_social_frog/" aria-label="Bruno the Frog LinkedIn"
+          target="_blank" rel=" noreferrer noopener" aria-label="Bruno the Frog Instagram"><img
+            src="https://brunothefrog.fi/wp-content/uploads/2025/01/brunoinsta.svg" alt="Bruno the Frog Instagram"
+            style="aspect-ratio:1;object-fit:contain" /></a></figure>
+      <!-- /wp:image -->
+
+      <!-- wp:image {"lightbox":{"enabled":false},"aspectRatio":"1","scale":"contain","sizeSlug":"large","linkDestination":"custom"} -->
+      <figure class="wp-block-image size-large"><a href="https://www.instagram.com/bruno_the_social_frog/"
+          target="_blank" rel=" noreferrer noopener" aria-label="Bruno the Frog Instagram"><img
+            src="https://brunothefrog.fi/wp-content/uploads/2025/01/brunolinkedin.svg" alt="Bruno the Frog Instagram"
+            style="aspect-ratio:1;object-fit:contain" /></a></figure>
+      <!-- /wp:image -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:image {"id":342,"sizeSlug":"full","linkDestination":"none","className":"img"} -->
+    <figure class="wp-block-image size-full img"><img
+        src="http://bruno-the-frog.local/wp-content/uploads/2025/01/Rectangle-2849.png" alt="" class="wp-image-342" />
+    </figure>
+    <!-- /wp:image -->
+
+    <!-- wp:group {"className":"bruno-subpage-hero__container__content is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|2xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group bruno-subpage-hero__container__content is-style-default">
+      <!-- wp:heading {"style":{"typography":{"textTransform":"uppercase"}},"fontSize":"heading-level-5"} -->
+      <h2 class="wp-block-heading has-heading-level-5-font-size" style="text-transform:uppercase">Blogi</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:heading {"style":{"typography":{"textTransform":"none"}},"textColor":"purple","fontSize":"heading-level-3"} -->
+      <h2 class="wp-block-heading has-purple-color has-text-color has-heading-level-3-font-size"
+        style="text-transform:none">Somen pyörteissä</h2>
+      <!-- /wp:heading -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+  <!-- wp:group {"tagName":"section","metadata":{"name":"Section","categories":["text"],"patternName":"bruno-the-frog-theme/section"},"align":"full","className":"section is-style-forest-green","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+  <section class="wp-block-group alignfull section is-style-forest-green"
+    style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+    <!-- wp:group {"metadata":{"name":"Container"},"align":"full","className":"section__container","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|lg"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|md"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group alignfull section__container"
+      style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)">
+      <!-- wp:heading {"fontSize":"heading-level-3"} -->
+      <h2 class="wp-block-heading has-heading-level-3-font-size">Etsi <mark style="background-color:rgba(0, 0, 0, 0)"
+          class="has-inline-color has-green-color">artikkeleita</mark></h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"align":"center","fontSize":"paragraph"} -->
+      <p class="has-text-align-center has-paragraph-font-size">Käytä hakua tai hyödynnä avainsanoja löytääksesi
+        artikkeleita haluamastasi aiheesta.</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:search {"label":"Search","width":100,"widthUnit":"%","buttonText":"Etsi"} /-->
+    </div>
+    <!-- /wp:group -->
+  </section>
+  <!-- /wp:group -->
+
+  <!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"}} -->
+  <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+    <!-- wp:post-title {"isLink":true} /-->
+
+    <!-- wp:post-excerpt /-->
+
+    <!-- wp:post-date /-->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-pagination -->
+    <!-- wp:query-pagination-previous /-->
+
+    <!-- wp:query-pagination-numbers /-->
+
+    <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+  </div>
+  <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
