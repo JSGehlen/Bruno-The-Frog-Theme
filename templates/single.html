@@ -28,27 +28,29 @@
 
   <!-- wp:post-content {"layout":{"type":"constrained","contentSize":"75rem"}} /-->
 
-</main>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Latest Posts"},"className":"latest-posts is-style-off-white-purple-btn","layout":{"type":"default"}} -->
-<section class="wp-block-group latest-posts is-style-off-white-purple-btn">
-  <!-- wp:group {"metadata":{"name":"Container"},"className":"latest-posts__container","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group latest-posts__container">
-    <!-- wp:buttons {"className":"all-posts-btn","layout":{"type":"flex","justifyContent":"center"}} -->
-    <div class="wp-block-buttons all-posts-btn"><!-- wp:button -->
-      <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blogi">Kaikki
-          artikkelit</a></div>
-      <!-- /wp:button -->
+  <!-- wp:group {"tagName":"section","metadata":{"name":"Latest Posts"},"className":"latest-posts is-style-off-white-purple-btn","layout":{"type":"default"}} -->
+  <section class="wp-block-group latest-posts is-style-off-white-purple-btn">
+    <!-- wp:group {"metadata":{"name":"Container"},"className":"latest-posts__container","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group latest-posts__container">
+      <!-- wp:buttons {"className":"all-posts-btn","layout":{"type":"flex","justifyContent":"center"}} -->
+      <div class="wp-block-buttons all-posts-btn"><!-- wp:button -->
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blogi">Kaikki
+            artikkelit</a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+
+      <!-- wp:heading {"textAlign":"center","fontSize":"heading-level-3"} -->
+      <h2 class="wp-block-heading has-text-align-center has-heading-level-3-font-size">Sinua saattaisi kiinnostaa myös
+        nämä</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"excerptLength":28,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide"} /-->
     </div>
-    <!-- /wp:buttons -->
-
-    <!-- wp:heading {"textAlign":"center","fontSize":"heading-level-3"} -->
-    <h2 class="wp-block-heading has-text-align-center has-heading-level-3-font-size">Sinua saattaisi kiinnostaa myös
-      nämä</h2>
-    <!-- /wp:heading -->
-
-    <!-- wp:latest-posts {"postsToShow":3,"displayPostContent":true,"excerptLength":28,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide"} /-->
-  </div>
+    <!-- /wp:group -->
+  </section>
   <!-- /wp:group -->
-</section>
+</main>
 <!-- /wp:group -->
+
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
