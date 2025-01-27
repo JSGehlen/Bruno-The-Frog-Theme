@@ -157,6 +157,9 @@ footer .footer-container {
   margin: 0 auto;
   position: relative;
 }
+footer .footer-container a {
+  text-decoration: none !important;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
   footer .footer-container {
     flex-direction: column !important;

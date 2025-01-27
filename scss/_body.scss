@@ -60,6 +60,10 @@ footer {
     margin: 0 auto;
     position: relative;
 
+    a {
+      text-decoration: none !important;
+    }
+
 
     @include tablet {
       flex-direction: column !important;
