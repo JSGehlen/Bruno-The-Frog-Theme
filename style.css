@@ -1411,6 +1411,25 @@ textarea {
   max-height: var(--max-height);
 }
 
+.tier-item {
+  min-width: 8rem !important;
+}
+@media (max-width: 1024px) {
+  .tier-item {
+    min-width: auto !important;
+  }
+}
+
+.item-info {
+  max-width: 21.875rem !important;
+  justify-content: center !important;
+}
+@media (max-width: 1024px) {
+  .item-info {
+    min-width: auto !important;
+  }
+}
+
 :root {
   --wp--preset--color--green: #98CE00;
   --wp--preset--color--purple: #7E1D56;

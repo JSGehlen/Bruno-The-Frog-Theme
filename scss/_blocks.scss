@@ -947,3 +947,20 @@
     max-height: var(--max-height);
   }
 }
+
+.tier-item {
+  min-width: 8rem !important;
+
+  @include tablet-and-down {
+    min-width: auto !important;
+  }
+}
+
+.item-info {
+  max-width: 21.875rem !important;
+  justify-content: center !important;
+
+  @include tablet-and-down {
+    min-width: auto !important;
+  }
+}
