@@ -400,6 +400,31 @@
     right: 1.5rem;
     top: 1.5rem;
     z-index: 999;
+    gap: 1rem;
+
+    @include desktop-and-up {
+      gap: 0.5rem;
+
+      a {
+        height: 3.25rem;
+        width: 3.25rem;
+        border-radius: 1rem;
+        transiton: all 0.3s ease;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        img {
+          min-width: 2rem;
+          min-height: 2rem;
+          margin: 0 auto;
+        }
+
+        &:hover {
+          background: $off-white;
+        }
+      }
+    }
   }
 
   &__container {
@@ -415,6 +440,7 @@
     @include tablet-and-down {
       flex-direction: column-reverse;
       justify-content: center !important;
+      padding-inline: 1.5rem !important;
     }
 
     figure,
@@ -612,10 +638,10 @@
   box-sizing: border-box;
 
   img {
-    width: calc(var(--circle-size) / 2);
-    height: calc(var(--circle-size) / 2);
-    max-width: calc(var(--circle-size) / 2) !important;
-    max-height: calc(var(--circle-size) / 2) !important;
+    width: calc(var(--circle-size) / 1.75);
+    height: calc(var(--circle-size) / 1.75);
+    max-width: calc(var(--circle-size) / 1.75) !important;
+    max-height: calc(var(--circle-size) / 1.75) !important;
   }
 }
 
@@ -962,5 +988,157 @@
 
   @include tablet-and-down {
     min-width: auto !important;
+  }
+}
+
+// .case-details {
+//   display: flex;
+//   align-items: center;
+//   gap: 2rem;
+// }
+
+// .direction-left .case-bubble {
+//   order: 1;
+// }
+
+// .direction-left .case-image-container {
+//   order: 2;
+// }
+
+// .direction-right .case-bubble {
+//   order: 2;
+// }
+
+// .direction-right .case-image-container {
+//   order: 1;
+// }
+
+// .case-bubble,
+// .case-simple {
+//   padding: 2rem !important;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   max-width: 40rem;
+//   background: #fff;
+//   position: relative;
+// }
+
+// .case-bubble {
+//   border-radius: 8px;
+// }
+
+
+
+// .align-left .case-bubble {
+//   align-items: flex-start !important;
+//   text-align: left !important;
+// }
+
+// .align-center .case-bubble {
+//   align-items: center !important;
+//   text-align: center !important;
+// }
+
+// .align-right .case-bubble {
+//   align-items: flex-end !important;
+//   text-align: right !important;
+// }
+
+// .case-bubble::after {
+//   content: '';
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+// }
+
+// .direction-left .case-bubble::after {
+//   top: 50%;
+//   right: -10px;
+//   transform: translateY(-50%);
+//   border-width: 10px 0 10px 10px;
+//   border-color: transparent transparent transparent #fff;
+// }
+
+// .direction-right .case-bubble::after {
+//   top: 50%;
+//   left: -10px;
+//   transform: translateY(-50%);
+//   border-width: 10px 10px 10px 0;
+//   border-color: transparent #fff transparent transparent;
+// }
+
+// @media (max-width: 768px) {
+//   .case-bubble {
+//     max-width: 90%;
+//   }
+
+//   .case-bubble::after {
+//     top: auto !important;
+//     bottom: -10px;
+//     left: 50% !important;
+//     right: auto !important;
+//     transform: translateX(-50%) !important;
+//     border-width: 10px 10px 0 10px !important;
+//     border-color: #fff transparent transparent transparent !important;
+//   }
+
+//   .case-details {
+//     flex-direction: column !important;
+//   }
+
+//   .case-image-container {
+//     width: 6rem;
+//     height: 6rem;
+//     border-radius: 2rem;
+//     align-self: center;
+//   }
+// }
+
+// .case-image-container {
+//   width: 10rem;
+//   height: 10rem;
+//   border-radius: 3rem;
+//   overflow: hidden;
+// }
+
+
+// .case-contact-details {
+//   color: #7E1D56;
+//   font-weight: 500;
+
+//   p {
+//     margin: 0;
+//   }
+// }
+
+// .case-rating {
+//   font-size: 1.2rem;
+//   color: gold;
+// }
+
+.bruno-contact-form button {
+
+  &:hover {
+    background-color: #80b500 !important;
+  }
+}
+
+@include mobile {
+  .slick-next {
+    right: -10px !important;
+  }
+
+  .slick-prev {
+    left: -10px !important;
+  }
+
+  .slick-next,
+  .slick-prev {
+    height: 32px !important;
+    width: 32px !important;
   }
 }
