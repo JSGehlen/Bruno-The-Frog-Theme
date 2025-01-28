@@ -403,3 +403,9 @@ textarea {
     flex: 1;
   }
 }
+
+.hide-on-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
