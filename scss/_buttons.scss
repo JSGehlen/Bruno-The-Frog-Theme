@@ -21,6 +21,15 @@
   background-color: #465058 !important;
 }
 
+.is-style-neon-green {
+  .wp-block-button__link {
+    background-color: $green !important;
+  }
+
+  .wp-block-button__link:hover {
+    background-color: #80b500 !important;
+  }
+}
 
 .is-style-purple {
   .is-style-outline .wp-block-button__link {

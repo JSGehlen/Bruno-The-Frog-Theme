@@ -409,3 +409,11 @@ textarea {
     display: none !important;
   }
 }
+
+.hide-on-desktop {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

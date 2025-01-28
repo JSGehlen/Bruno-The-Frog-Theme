@@ -22,6 +22,12 @@
   }
 }
 
+@mixin tablet-and-up {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: 1025px) and (max-width: 1240px) {
     @content;
