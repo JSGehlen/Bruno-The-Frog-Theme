@@ -404,8 +404,8 @@ textarea {
   }
 }
 
-.hide-on-mobile {
-  @include mobile {
+@include mobile {
+  .hide-on-mobile {
     display: none !important;
   }
 }
