@@ -943,6 +943,7 @@ textarea {
     flex-direction: column-reverse;
     justify-content: center !important;
     padding-inline: 1.5rem !important;
+    padding-top: 1rem;
   }
 }
 .hero__container figure,
