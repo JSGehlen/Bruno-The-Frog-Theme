@@ -1632,8 +1632,13 @@ textarea {
   }
   .slick-next,
   .slick-prev {
-    height: 32px !important;
-    width: 32px !important;
+    height: 48px !important;
+    width: 48px !important;
+    top: 25%;
+  }
+  .slick-next::before,
+  .slick-prev::before {
+    font-size: 24px !important;
   }
 }
 @media (max-width: 768px) {

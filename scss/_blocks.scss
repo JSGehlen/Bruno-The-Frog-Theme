@@ -1170,8 +1170,13 @@
 
   .slick-next,
   .slick-prev {
-    height: 32px !important;
-    width: 32px !important;
+    height: 48px !important;
+    width: 48px !important;
+    top: 25%;
+
+    &::before {
+      font-size: 24px !important;
+    }
   }
 }
 
