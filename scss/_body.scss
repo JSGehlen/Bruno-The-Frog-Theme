@@ -291,6 +291,18 @@ textarea {
     }
   }
 
+  ul {
+    max-width: 55rem !important;
+
+    li {
+      margin-top: 1em;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
   .avatar {
     width: 8rem;
     height: 8rem;

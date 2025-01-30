@@ -374,6 +374,15 @@ textarea {
     padding-inline: 0 !important;
   }
 }
+.post-container ul {
+  max-width: 55rem !important;
+}
+.post-container ul li {
+  margin-top: 1em;
+}
+.post-container ul li:first-of-type {
+  margin-top: 0;
+}
 .post-container .avatar {
   width: 8rem;
   height: 8rem;
