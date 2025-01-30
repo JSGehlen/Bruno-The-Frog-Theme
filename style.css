@@ -374,8 +374,10 @@ textarea {
     padding-inline: 0 !important;
   }
 }
-.post-container ul {
-  max-width: 55rem !important;
+@media (max-width: 768px) {
+  .post-container ul {
+    padding-left: 1em;
+  }
 }
 .post-container ul li {
   margin-top: 1em;
@@ -569,9 +571,6 @@ textarea {
   max-width: 75rem !important;
   margin: 0 auto !important;
   position: relative;
-}
-.section__container p {
-  max-width: 55rem !important;
 }
 @media (max-width: 768px) {
   .section__container {

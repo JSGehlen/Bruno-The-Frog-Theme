@@ -292,7 +292,9 @@ textarea {
   }
 
   ul {
-    max-width: 55rem !important;
+    @include mobile {
+      padding-left: 1em;
+    }
 
     li {
       margin-top: 1em;
