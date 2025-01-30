@@ -37,6 +37,11 @@
     margin: 0 auto !important;
     position: relative;
 
+    @include tablet() {
+      padding: $spacing-lg !important;
+      gap: $spacing-md !important;
+    }
+
     @include mobile() {
       padding: $spacing-lg 0 !important;
       gap: $spacing-md !important;

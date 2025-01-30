@@ -328,6 +328,12 @@ textarea {
     }
   }
 
+  section .section__container {
+    @include tablet-and-down {
+      padding-inline: 0 !important;
+    }
+  }
+
   ul {
     margin-block: 0 !important;
 
@@ -345,7 +351,7 @@ textarea {
   }
 
   &__passage {
-    margin-block: 2.5rem !important;
+    margin-block: 3.5rem !important;
 
     &:first-child {
       margin-top: 0 !important;
@@ -371,6 +377,66 @@ textarea {
 
   .mt-none {
     margin-top: 0 !important;
+  }
+
+  .mt-none-tablet {
+    @include tablet {
+      margin-top: 0 !important;
+    }
+  }
+
+  .mt-none-mobile {
+    @include mobile {
+      margin-top: 0 !important;
+    }
+  }
+
+  .mb-none {
+    margin-bottom: 0 !important;
+  }
+
+  .mb-none-tablet {
+    @include tablet {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .mb-none-mobile {
+    @include mobile {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .mr-none {
+    margin-top: 0 !important;
+  }
+
+  .mr-none-tablet {
+    @include tablet {
+      margin-top: 0 !important;
+    }
+  }
+
+  .mr-none-mobile {
+    @include mobile {
+      margin-top: 0 !important;
+    }
+  }
+
+  .ml-none {
+    margin-bottom: 0 !important;
+  }
+
+  .ml-none-tablet {
+    @include tablet {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .ml-none-mobile {
+    @include mobile {
+      margin-bottom: 0 !important;
+    }
   }
 
   .avatar {
@@ -402,7 +468,7 @@ textarea {
   }
 }
 
-.wp-block-columns>.wp-block-column:first-child .color-box {
+.wp-block-columns>.wp-block-column:not([class*="has-background"]) .post-container__column-box {
   padding-left: 0 !important;
 
   @include tablet-and-down {
@@ -410,7 +476,7 @@ textarea {
   }
 }
 
-.color-box {
+.post-container__column-box {
   p:first-of-type {
     margin-top: 0 !important;
   }
