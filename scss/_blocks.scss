@@ -1187,3 +1187,43 @@
     flex-direction: column-reverse;
   }
 }
+
+.sp-pcp-post {
+  position: relative !important;
+}
+
+.sp-pcp-title {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  width: 100%;
+  min-height: 5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  a {
+    text-align: center;
+    color: black !important;
+  }
+}
+
+.sp-pcp-post-thumb-area {
+  min-height: 16rem !important;
+
+  a {
+    display: block;
+    min-height: 16rem !important;
+
+    img {
+      min-height: 16rem !important;
+      object-fit: cover;
+    }
+  }
+}
+
+.pcp-carousel-wrapper .sp-pcp-carousel {
+  padding-top: 2rem !important;
+}
