@@ -304,6 +304,14 @@ textarea {
     p {
       margin-block-start: 36px !important;
     }
+
+    .highlight-box p {
+      &:first-of-type {
+        margin-block-start: 0 !important; // Override it
+      }
+
+      margin-inline: 0 !important;
+    }
   }
 
   ul {
@@ -365,9 +373,13 @@ textarea {
     }
   }
 
+  .has-drop-cap:not(:focus):first-letter {
+    font-size: clamp(3em, 10vw, 6em) !important;
+  }
+
   p:not(.post-container__lahteet p) {
-    margin-block-start: 1rem !important;
-    margin-block-end: 1rem !important;
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
 
     @include mobile {
       margin-block-start: 0.5rem;
@@ -464,6 +476,20 @@ textarea {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+    }
+  }
+
+  .highlight-box {
+    p:first-of-type {
+      margin-top: 0 !important;
+    }
+
+    p {
+      margin-inline: 0 !important;
+    }
+
+    @include mobile {
+      padding: 2rem !important;
     }
   }
 }
