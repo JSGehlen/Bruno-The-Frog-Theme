@@ -1852,13 +1852,16 @@ textarea {
 
 .sp-pcp-post-thumb-area {
   min-height: 16rem !important;
+  max-height: 16rem !important;
 }
 .sp-pcp-post-thumb-area a {
   display: block;
   min-height: 16rem !important;
+  max-height: 16rem !important;
 }
 .sp-pcp-post-thumb-area a img {
   min-height: 16rem !important;
+  max-height: 16rem !important;
   object-fit: cover;
 }
 

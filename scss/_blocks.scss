@@ -1212,13 +1212,16 @@
 
 .sp-pcp-post-thumb-area {
   min-height: 16rem !important;
+  max-height: 16rem !important;
 
   a {
     display: block;
     min-height: 16rem !important;
+    max-height: 16rem !important;
 
     img {
       min-height: 16rem !important;
+      max-height: 16rem !important;
       object-fit: cover;
     }
   }
