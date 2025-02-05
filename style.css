@@ -1385,6 +1385,21 @@ textarea {
   max-height: 32px;
   max-width: 32px;
 }
+.bruno-subpage-hero__container__social-links a {
+  height: 49px;
+  width: 49px;
+  border-radius: 1rem;
+  transiton: all 0.3s ease;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.bruno-subpage-hero__container__social-links a img {
+  margin: 0 auto;
+}
+.bruno-subpage-hero__container__social-links a:hover {
+  background: #F6F5F1;
+}
 @media (max-width: 768px) {
   .bruno-subpage-hero__container__social-links {
     display: none !important;
