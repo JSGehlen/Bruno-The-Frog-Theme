@@ -1243,7 +1243,7 @@
     max-width: fit-content;
 
     img {
-      width: 80% !important;
+      width: 100% !important;
       margin: 0 auto;
     }
   }
@@ -1261,14 +1261,14 @@
     }
   }
 
-    .slick-slide figure {
-      max-width: fit-content;
+  .slick-slide figure {
+    max-width: fit-content;
 
-      img {
-        width: 80% !important;
-        margin: 0 auto;
-      }
+    img {
+      width: 100% !important;
+      margin: 0 auto;
     }
+  }
 }
 
 @include mobile {
