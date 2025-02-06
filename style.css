@@ -1909,7 +1909,7 @@ textarea {
     max-width: fit-content;
   }
   .slick-slide figure img {
-    width: 100% !important;
+    width: 80% !important;
     margin: 0 auto;
   }
 }
