@@ -1907,6 +1907,8 @@ textarea {
   }
   .slick-slide figure {
     max-width: fit-content;
+    display: flex;
+    width: 80%;
   }
   .slick-slide figure img {
     width: 90% !important;
@@ -1925,6 +1927,8 @@ textarea {
   }
   .slick-slide figure {
     max-width: fit-content;
+    display: flex;
+    width: 80%;
   }
   .slick-slide figure img {
     width: 90% !important;
