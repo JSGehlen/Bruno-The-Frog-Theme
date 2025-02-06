@@ -336,6 +336,12 @@ p {
   .flex-col-reverse {
     flex-direction: column-reverse !important;
   }
+  .flex-col-reverse figure {
+    max-width: fit-content;
+  }
+  .flex-col-reverse figure img {
+    margin: 0 auto !important;
+  }
 }
 @media (max-width: 768px) {
   .flex-col-reverse {
@@ -1962,6 +1968,13 @@ textarea {
 
 .pcp-carousel-wrapper .sp-pcp-carousel {
   padding-top: 2rem !important;
+}
+
+@media (max-width: 1024px) {
+  .menu-links a:hover,
+  .social-links a:hover {
+    background-color: transparent !important;
+  }
 }
 
 :root {

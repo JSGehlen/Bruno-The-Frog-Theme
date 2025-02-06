@@ -248,6 +248,14 @@ p {
 .flex-col-reverse {
   @include tablet {
     flex-direction: column-reverse !important;
+
+    figure {
+      max-width: fit-content;
+
+      img {
+        margin: 0 auto !important;
+      }
+    }
   }
 
   @include mobile {

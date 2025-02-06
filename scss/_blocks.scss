@@ -1311,3 +1311,10 @@
 .pcp-carousel-wrapper .sp-pcp-carousel {
   padding-top: 2rem !important;
 }
+
+.menu-links a:hover,
+.social-links a:hover {
+  @include tablet-and-down {
+    background-color: transparent !important;
+  }
+}
