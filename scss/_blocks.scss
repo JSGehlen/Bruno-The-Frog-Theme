@@ -38,7 +38,7 @@
     position: relative;
 
     @include tablet() {
-      padding: $spacing-lg !important;
+      padding: $spacing-lg 0 !important;
       gap: $spacing-md !important;
     }
 
@@ -148,6 +148,11 @@
   align-items: center;
   gap: $spacing-2xl;
   align-self: stretch;
+
+  @include tablet {
+    padding: $spacing-lg $spacing-lg !important;
+    gap: $spacing-xl !important;
+  }
 
   @include mobile() {
     padding: $spacing-lg $spacing-sm !important;
@@ -666,11 +671,24 @@
       display: flex;
       justify-content: center;
       align-self: center;
+      max-width: 50vw;
 
       @include mobile {
         padding-top: 0;
         padding-bottom: 3rem;
         width: calc(100% - 3rem);
+      }
+
+      @include tablet {
+        width: 55% !important;
+      }
+
+      @include ipad-portrait {
+        width: 55% !important;
+      }
+
+      @include ipad-landscape-ratio {
+        width: 55% !important;
       }
 
       &::after {
@@ -704,6 +722,7 @@
           border-radius: 1rem;
         }
       }
+
     }
 
     &__social-links {
@@ -769,7 +788,11 @@
 
       @include tablet {
         --hero-height: 20rem;
-        padding: $spacing-sm;
+        padding: 0;
+      }
+
+      @include ipad-landscape-ratio {
+        padding: 0;
       }
 
       @include mobile {
@@ -790,8 +813,12 @@
     height: 100%;
   }
 
-  @include tablet-and-down {
+  @include mobile {
     flex-direction: column;
+  }
+
+  @include ipad-portrait {
+    flex-direction: row;
   }
 }
 
@@ -1197,6 +1224,42 @@
     &::before {
       font-size: 24px !important;
     }
+  }
+}
+
+@include ipad-portrait {
+
+  .slick-next,
+  .slick-prev {
+    height: 64px !important;
+    width: 64px !important;
+
+    &::before {
+      font-size: 32px !important;
+    }
+  }
+
+  .slick-slide figure img {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+}
+
+@include tablet {
+
+  .slick-next,
+  .slick-prev {
+    height: 64px !important;
+    width: 64px !important;
+
+    &::before {
+      font-size: 32px !important;
+    }
+  }
+
+  .slick-slide figure img {
+    width: 80% !important;
+    margin: 0 auto;
   }
 }
 

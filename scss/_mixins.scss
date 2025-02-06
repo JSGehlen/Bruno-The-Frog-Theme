@@ -46,3 +46,27 @@
     @content;
   }
 }
+
+@mixin ipad-portrait {
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin ipad-landscape {
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin ipad-portrait-ratio {
+  @media screen and (min-width: 1024px) and (max-width: 1366px) and (aspect-ratio: 4/3) {
+    @content;
+  }
+}
+
+@mixin ipad-landscape-ratio {
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    @content;
+  }
+}

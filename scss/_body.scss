@@ -181,23 +181,23 @@ p {
 .is-style-latte a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]),
 .is-style-latte-latte-btn a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]),
 .is-style-default a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]) {
-  color: $purple !important;
+  color: $purple;
 }
 
 .is-style-purple a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]),
 .is-style-forest-green a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]),
 .is-style-black a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]) {
-  color: $green !important;
+  color: $green;
 }
 
 .is-style-off-white a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]),
 .is-style-off-white-purple-btn a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]),
 .is-style-off-white-green-btn a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]) {
-  color: $green-darker !important;
+  color: $green-darker;
 }
 
 .is-style-neon-green a:not(.wp-block-button__link):not(.sp-pcp-title a):not([class*="button-hover-"]) {
-  color: $black !important;
+  color: $black;
 }
 
 .ml-auto {
@@ -246,6 +246,10 @@ p {
 }
 
 .flex-col-reverse {
+  @include tablet {
+    flex-direction: column-reverse !important;
+  }
+
   @include mobile {
     flex-direction: column-reverse !important;
   }
@@ -260,6 +264,8 @@ p {
 }
 
 .three-columns {
+  gap: 2rem;
+
   &__cell {
     justify-content: center;
     align-items: center;
@@ -270,6 +276,15 @@ p {
       flex: 1;
     }
   }
+
+  @include ipad-portrait {
+    gap: 3rem;
+  }
+
+  @include tablet {
+    gap: 3rem;
+  }
+
 }
 
 .slick-next::before,
