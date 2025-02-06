@@ -1905,6 +1905,9 @@ textarea {
   .slick-prev::before {
     font-size: 32px !important;
   }
+  .slick-slide figure {
+    max-width: fit-content;
+  }
   .slick-slide figure img {
     width: 80% !important;
     margin: 0 auto;
@@ -1919,6 +1922,9 @@ textarea {
   .slick-next::before,
   .slick-prev::before {
     font-size: 32px !important;
+  }
+  .slick-slide figure {
+    max-width: fit-content;
   }
   .slick-slide figure img {
     width: 80% !important;
